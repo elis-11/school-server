@@ -1,6 +1,6 @@
 const Config =()=>{
   return(
-      <div>Config...</div>
+      <div className='page pageConfig'>Config...</div>
   )
 }
 export default Config
