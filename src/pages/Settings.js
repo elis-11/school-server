@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { MainContext } from "../mainContext";
 
-const Config = () => {
+const Settings = () => {
   const { theme } = useContext(MainContext);
   return (
 
@@ -10,4 +10,4 @@ const Config = () => {
       </div>
   ) 
 };
-export default Config;
+export default Settings;

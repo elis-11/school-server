@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./App.scss";
 import { MainContext } from './mainContext';
-import Config from "./pages/Config";
+import Settings from "./pages/Settings";
 import Home from "./pages/Home";
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/Config">
-                Config
+              <NavLink activeClassName="selected" to="/Settings">
+                Settings
               </NavLink>{" "}
             </li>
           </ul>
@@ -34,8 +34,8 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/config">
-            <Config />
+          <Route path="/settings">
+            <Settings />
           </Route>
         </Switch>
       </Router>
