@@ -12,7 +12,7 @@ const Settings = () => {
       </div>
       <div className="row">
         Language: ({language})
-        <button onClick={() => setLanguage('english')}>Emglish</button>
+        <button onClick={() => setLanguage('english')}>English</button>
         <button onClick={() => setLanguage('german')}>German</button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,6 +13,16 @@ import Home from "./pages/Home";
 function App() {
   const [theme, setTheme] = useState("light");
   const [language, setLanguage] = useState("english");
+
+  // const themeStyles()
+
+  useEffect(() => {
+    if (theme ==='dark') {
+document.body.style='background: #333; color: #fff;'
+}else{
+  document.body.style='background: #fff; color: black;'
+}
+}, [theme]  )
 
   return (
     <div className="App">
