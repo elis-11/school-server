@@ -6,27 +6,32 @@ import {
   NavLink,
 } from "react-router-dom";
 import "./App.scss";
-import { MainContext } from "./mainContext";
 import Settings from "./pages/Settings";
 import Home from "./pages/Home";
+import { MainContext } from "./mainContext";
+import LanguageManager from "./languageManager";
 
 function App() {
   const [theme, setTheme] = useState("light");
   const [language, setLanguage] = useState("english");
 
-  // const themeStyles()
+const text = (idCode) => {
+  return LanguageManager.getText(language, idCode)
+}
 
   useEffect(() => {
-    if (theme ==='dark') {
-document.body.style='background: #333; color: #fff;'
-}else{
-  document.body.style='background: #fff; color: black;'
-}
-}, [theme]  )
+    if (theme === "dark") {
+      document.body.style = "background: #333; color: #fff;";
+    } else {
+      document.body.style = "background: #fff; color: black;";
+    }
+  }, [theme]);
 
   return (
     <div className="App">
-      <MainContext.Provider value={{ theme, setTheme, language, setLanguage }}>
+      <MainContext.Provider
+        value={{ theme, setTheme, language, setLanguage, text }}
+      >
         <Router>
           <nav>
             <ul>
