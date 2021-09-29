@@ -14,8 +14,8 @@ function App() {
       <Router>
         <nav>
           <ul>
-            <li><NavLink className="selected" to="/" exact={true}>Home</NavLink></li>
-            <li><NavLink className="selected" to="/Config">Config</NavLink> </li>
+            <li><NavLink activeClassName="selected" to="/" exact={true}>Home</NavLink></li>
+            <li><NavLink activeClassName="selected" to="/Config">Config</NavLink> </li>
           </ul>
         </nav>
         <Switch>
