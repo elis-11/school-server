@@ -30,7 +30,7 @@ class LanguageManager {
         german: "Deutsch",
       },
       home: {
-        english: "home",
+        english: "Home",
         german: "Startseite",
       },
       settings: {

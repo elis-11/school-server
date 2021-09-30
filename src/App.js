@@ -15,9 +15,9 @@ function App() {
   const [theme, setTheme] = useState("light");
   const [language, setLanguage] = useState("english");
 
-const text = (idCode) => {
-  return LanguageManager.getText(language, idCode)
-}
+  const text = (idCode) => {
+    return LanguageManager.getText(language, idCode);
+  };
 
   useEffect(() => {
     if (theme === "dark") {
@@ -37,13 +37,13 @@ const text = (idCode) => {
             <ul>
               <li>
                 <NavLink activeClassName="selected" to="/" exact={true}>
-                  Home
+                  {text("home")}
                 </NavLink>
               </li>
               <li>
                 <NavLink activeClassName="selected" to="/Settings">
-                  Settings
-                </NavLink>{" "}
+                  {text("settings")}
+                </NavLink>
               </li>
             </ul>
           </nav>
