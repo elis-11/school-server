@@ -40,6 +40,7 @@ function App() {
                   {text("home")}
                 </NavLink>
               </li>
+              
               <li>
                 <NavLink activeClassName="selected" to="/Settings">
                   {text("settings")}
