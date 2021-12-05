@@ -1,9 +1,0 @@
-GET http://localhost:3023/getpin HTTP/1.1
-
-###
-POST http://localhost:3023/controllerApp
-Content-Type: application/json
-
-{
-"pin": "7777"
-}
