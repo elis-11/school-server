@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // --let & const--
+      let myName;
+      console.log(myName);
+      myName = "Elisa";
+      console.log(myName);
+      const hisName = "Robert";
+      console.log(hisName);
+      // ----OBJECTS---
+      const chel = {
+        name: "John",
+        age: 25,
+      };
+      const copyOfChel = chel;
+      copyOfChel.adress = "Hamburg";
+      console.log(chel);
+
+      const cars = {
+        audi: 4,
+        mers: 7,
+        bmw: 3,
+      };
+      const addNoch = cars;
+      addNoch.noch = 6;
+      console.log(cars);
+      // --typisazia 1:28---
+      // int => integer
+      let a = 10;
+      a = true;
+      a = "Elisa";
+      //   a = undefined;
+      console.log(a);
+      //--------------
+
+      // function test() {}  =
+      const test = () => {
+        console.log("Hey there");
+      };
+      console.log("Hey there");
+      test();
+
+      a = 7;
+      // a() //Error
+      console.log(a);
+      // --const-- 1:37---
+      const c = () => {
+        console.log("Hey Liss");
+      };
+      c();
+      //   c = 20;  // Error
+
+      // ---OBJECTS---1:39---
+// --Dot notation--
+const myCity={
+city: 'Hamburg',
+popular: true,
+country: 'Germany'
+}
+console.log(myCity.city);
+console.log(myCity.country);
+//----------------
+isCity={
+    city: 'Hamburg'
+}
+isCity.city= 'Minsk'
+console.log(myCity);
+// 1:44
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
