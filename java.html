@@ -24,14 +24,6 @@
       copyOfChel.adress = "Hamburg";
       console.log(chel);
 
-      const cars = {
-        audi: 4,
-        mers: 7,
-        bmw: 3,
-      };
-      const addNoch = cars;
-      addNoch.noch = 6;
-      console.log(cars);
       // --typisazia 1:28---
       // int => integer
       let a = 10;
@@ -59,31 +51,63 @@
       //   c = 20;  // Error
 
       // ---OBJECTS---1:39---
-// --Dot notation--
-const myCity={
-city: 'Hamburg',
-popular: true,
-country: 'Germany'
-}
-console.log(myCity.city);
-console.log(myCity.country);
-//----------------
-isCity={
-    city: 'Hamburg'
-}
-isCity.city= 'Minsk'
-console.log(myCity);
-// 1:44
+      //--------------
+      // const pizzas = [
+      //   { name: "Hawaii", price: 5.99, image: "http://images.com/hawaii" },
+      //   { name: "Funghi", price: 6.99, image: "http://images.com/funghi" },
+      // ];
+      //---ADD
+      const koftas = {
+        wthite: 1,
+        black: 5,
+      };
+      const byunew = koftas;
+      byunew.blue = 3;
+      console.log(koftas);
+      console.log(koftas.blue);
 
+      //   { name: "Hawaii", price: 5.99, image: "http://images.com/hawaii" },
+      //   { name: "Funghi", price: 6.99, image: "http://images.com/funghi" },
+      // ];
 
+      const myCars = {
+        honda: 3,
+        bmw: 6,
+        jaguar: 5,
+      };
+      console.log(myCars);
+      const addNewCar = myCars;
+      addNewCar.volvo = 2;
+      console.log(myCars);
+      //DELETE
+      const hefts = {
+        line: true,
+        kvadrate: false,
+        chisty: 2,
+      };
+      console.log(hefts);
+      delete hefts.line;
+      console.log(hefts);
+      hefts["popular"] = true;
+      console.log(hefts);
 
+      const myAddress = {
+        city: "Hamburg",
+        strasse: "Bornheide",
+        hous: 60,
+      };
+console.log(myAddress);
 
+const newData=myAddress
+newData.plz=22876
+console.log(myAddress);
 
+myAddress['popular']=true
+console.log(myAddress);
 
-
-
-
-
+const countyPropertyName = "country"
+myAddress[countyPropertyName]="Germany"
+console.log(myAddress); // 1:54
 
 
 

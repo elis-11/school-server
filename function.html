@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //FUNCTION  2:42
+      let a = 3;
+      let b = 4;
+      let c = a + b;
+      console.log(c);
+      a = 8;
+      b = 12;
+      c = a + b;
+      console.log(c);
+
+      let d = 4;
+      let y = 5;
+      function sum(d, y) {
+        const z = d + y;
+        console.log(z);
+      }
+      sum(d, y);
+      d = 8;
+      y = 2;
+      sum(d, y);
+      //---
+      function myFn(a, b) {
+        let c;
+        a = a + 1;
+        c = a + b;
+        return c;
+      }
+      myFn(10, 3);
+      console.log(myFn);
+// ---3:01
+const personaOne={
+    name:'Bob',
+    age:21
+} 
+const personaTwo={
+    name:'Rob',
+    age:40
+} 
+function increasePersonaAge(persona){
+    persona.age += 1
+    return persona
+}
+increasePersonaAge(personaOne)
+console.log(personaOne.age);
+increasePersonaAge(personaTwo)
+console.log(personaTwo.age);
+// ---version- WRONG
+const persOne={
+    name:'Bob',
+    weight:70
+}
+function incraesePersWeight(pers){
+    pers.weight-= 1
+    return pers
+}
+incraesePersWeight(persOne)
+console.log(persOne.weight);
+//---RIGHT  3:05
+const personOne ={
+    name:'Rob',
+    weight: 83
+}
+function incraesePersonWeight(person){
+    const updatedPerson=Object.assign({}, person)
+    updatedPerson.weight -=1
+    return updatedPerson
+}
+const updatedPersonOne = incraesePersonWeight(personOne)
+console.log(personOne.weight);
+console.log(updatedPersonOne.weight);
+//--CALLBACKFUNCTION
+function printMyName(){
+    console.log('Elisa');
+}
+setTimeout(printMyName, 1000)
+
+
+
+
+
+</script>
+  </body>
+</html>

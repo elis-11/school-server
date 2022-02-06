@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const myCity = {
+        city: "Hamburg",
+        address: {
+          strit: "Bornheide",
+          isPopular: true,
+          house: 60,
+          info: false,
+        },
+      };
+      console.log(myCity);
+      myCity["popular"] = true;
+      console.log(myCity);
+      const countyPropertyName = "country";
+      myCity[countyPropertyName] = "Germany"; // 1:55  ?
+      console.log(myCity);
+      console.log(myCity.address.house);
+      delete myCity.address.house;
+      console.log(myCity);
+      const plzPropertyName = "plz";
+      myCity.address[plzPropertyName] = 66543;
+      console.log(myCity);
+
+      const name = "Lisa"; //2:00
+      const postsQty = 23;
+
+      const userProfile = {
+        name: name, //name,
+        postsQty: postsQty, //postsQty,
+        hasSignedAgreement: false,
+      };
+
+      const hisCity = { //2:10
+        city: "Berlin",
+        // cityGreeting: function (){
+        cityGreeting () {        // 44=45
+          console.log("Greetings!!");
+        },
+      };
+      hisCity.cityGreeting();
+
+      const isCity={
+        citycity:'Berlin',
+      cityHello (){
+        console.log('Grüß!');
+      }
+      }
+      isCity.cityHello();
+      // ---PARSE---2:17
+      // ---NETWORK---2:22
+      // ---COPY BY REFERENZE---2:25
+       const allCars=10
+       let newCars= allCars
+       newCars= 7
+       console.log(allCars);
+       console.log(newCars);
+
+const person={
+  name:'Bob',
+  age:21
+}
+person.age=22
+person.isAdult=true
+
+console.log(person.age)
+console.log(person.isAdult)
+//---
+const person1={
+  name:'Lis',
+  age:25
+}
+const person2=person1
+person2.age=26
+person2.isAdult=true
+console.log((person1.age));
+console.log((person1.isAdult));
+//---vers-1
+const man={
+  name:'Bob',
+  age:21
+}
+const man1=Object.assign({}, man)
+man1.age=30
+console.log(man.age);
+console.log(man1.age);
+//---vers-2
+const woman={
+  name:'Alisa',
+  age:17
+}
+const woman2={...woman}
+woman2.name='Sara'
+console.log(woman.name);
+console.log(woman2.name);
+//---vers-3 IMPORTANT
+const child={
+  name:'Rob',
+  age:12
+}
+const child2=JSON.parse(JSON.stringify(child))  // 2:44
+child2.name='Carla'
+console.log(child.name);
+console.log(child2.name);
+
+      
+    </script>
+    <!-- https://www.youtube.com/watch?v=CxgOKJh4zWE&list=LL&index=7&t=3502s -->
+  </body>
+</html>
