@@ -37,57 +37,172 @@
       }
       myFn(10, 3);
       console.log(myFn);
-// ---3:01
-const personaOne={
-    name:'Bob',
-    age:21
-} 
-const personaTwo={
-    name:'Rob',
-    age:40
-} 
-function increasePersonaAge(persona){
-    persona.age += 1
-    return persona
+      // ---3:01
+      const personaOne = {
+        name: "Bob",
+        age: 21,
+      };
+      const personaTwo = {
+        name: "Rob",
+        age: 40,
+      };
+      function increasePersonaAge(persona) {
+        persona.age += 1;
+        return persona;
+      }
+      increasePersonaAge(personaOne);
+      console.log(personaOne.age);
+      increasePersonaAge(personaTwo);
+      console.log(personaTwo.age);
+      // ---version- WRONG
+      const persOne = {
+        name: "Bob",
+        weight: 70,
+      };
+      function incraesePersWeight(pers) {
+        pers.weight -= 1;
+        return pers;
+      }
+      incraesePersWeight(persOne);
+      console.log(persOne.weight);
+      //---RIGHT  3:05
+      const personOne = {
+        name: "Rob",
+        weight: 83,
+      };
+      function incraesePersonWeight(person) {
+        const updatedPerson = Object.assign({}, person);
+        updatedPerson.weight -= 1;
+        return updatedPerson;
+      }
+      const updatedPersonOne = incraesePersonWeight(personOne);
+      console.log(personOne.weight);
+      console.log(updatedPersonOne.weight);
+      //--CALLBACKFUNCTION
+      function printMyName() {
+        console.log("Elisa");
+      }
+      setTimeout(printMyName, 1000);
+
+      //---oblast' vidimosty 3:25
+      const s = 5;
+      function newFn() {
+        function innerFn() {
+          console.log(s);
+        }
+        innerFn();
+      }
+      newFn();
+      // ---new---
+      let t;
+      let r;
+      let h = 9;
+      function secFn() {
+        // r = false;
+        let t = 2;
+        t = true;
+        r = 11;
+        console.log(r);
+        console.log(t);
+      }
+      secFn();
+      console.log(t);
+      console.log(r);
+      console.log(h);
+      //4:26 SPRED OPERATOR
+      const button = {
+        width: 20,
+        text: "Buy",
+      };
+      const redButton = {
+        ...button,
+        color: "black",
+      };
+      console.table(redButton);
+      //---4:29
+      const buttonInfo = {
+        text: "Info",
+      };
+      const buttonStyle = {
+        color: "red",
+        width: 200,
+        height: 20,
+      };
+      const button2 = {
+        ...buttonInfo,
+        ...buttonStyle,
+      };
+      console.table(button2);
+      //--- 4:32
+      // 'Hello ' + 'World'
+      const hello = "Hello";
+      const world = "World";
+      const greeting = hello + " " + world;
+      console.log(greeting);
+      //--- 4:34  TEMPLATE STRING LITERAL
+      const greeting1 = `${hello} ${world}`;
+      console.log(greeting1);
+      //---about me
+      const myName = "Elisa";
+      const myCity = "Hamburg";
+      const aboutMe = `My name is ${myName}, I live in ${myCity}!`;
+      console.log(aboutMe);
+      //---
+      const fullName = "Arsa";
+      const name = "Elisa";
+      const together = `My name is ${name} my lastname is ${fullName}`;
+      console.log(together);
+      //--- 4
+      const prise = 45;
+      const title = "BMW";
+      const wert = `This car is ${title} and it costs ${prise} dollar.`;
+      console.log(wert);
+      //---4:44
+      setTimeout(function () {
+        console.log("My Message!");
+      }, 1000);
+      //---  ||
+      setTimeout(() => {
+        console.log("New Message!");
+      }, 1000);
+      //---
+      // const myFunc = (w, q) => {
+      //   let f;
+      //   w = w + 1;
+      //   f = w + q;
+      //   return f;
+      // };
+      // myFunc(5, 3);
+      //---DEFAULT
+      function multByFactor(value, multiplier = 2) {
+        return value * multiplier;
+      }
+      multByFactor(10, 3);
+      console.table(multByFactor(10, 3));
+      multByFactor(5);
+      //---
+      const newFactor = (value, multiplier = 4) => {
+        return value * multiplier;
+      };
+//---5
+const newPost=(post,addedAt=Date())=>({
+  ...post,
+  addedAt,
+})
+const firstPost={
+  id:1,
+  author: 'Elisa',
 }
-increasePersonaAge(personaOne)
-console.log(personaOne.age);
-increasePersonaAge(personaTwo)
-console.log(personaTwo.age);
-// ---version- WRONG
-const persOne={
-    name:'Bob',
-    weight:70
-}
-function incraesePersWeight(pers){
-    pers.weight-= 1
-    return pers
-}
-incraesePersWeight(persOne)
-console.log(persOne.weight);
-//---RIGHT  3:05
-const personOne ={
-    name:'Rob',
-    weight: 83
-}
-function incraesePersonWeight(person){
-    const updatedPerson=Object.assign({}, person)
-    updatedPerson.weight -=1
-    return updatedPerson
-}
-const updatedPersonOne = incraesePersonWeight(personOne)
-console.log(personOne.weight);
-console.log(updatedPersonOne.weight);
-//--CALLBACKFUNCTION
-function printMyName(){
-    console.log('Elisa');
-}
-setTimeout(printMyName, 1000)
+newPost(firstPost)
+console.table(newPost(firstPost))
+//---5:07
 
 
 
 
 
-</script>
+
+
+    </script>
   </body>
 </html>
