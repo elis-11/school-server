@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+              const newPost=(post, addedAt=Date())=>({
+           ...post,
+           addedAt
+       })
+       const firstPost={
+           id:1, xauthor:'Elis'
+       }
+      console.log(newPost(firstPost));
+      console.table(newPost(firstPost));
+      //--
+      const newTask=(task, addTask=Date())=>({
+          ...task,
+          addTask
+      })
+      const firstTask={
+          id:1,
+          author:'Elis',
+          title:'Task',
+      }
+      console.table(newTask(firstTask));
+    </script>
+  </body>
+</html>
