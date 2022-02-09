@@ -1,6 +1,12 @@
 console.log(2 + 7);
-const fnWithError = () => {
+//--TRY...CATCH --5:13
+const fnWithError = () => { 
   throw new Error("some error");
-};
-fnWithError();
+}
+try{
+    fnWithError()
+ } catch (error) {
+        console.error(error);
+        console.log(error.message);
+    }
 console.log("Continue...");
