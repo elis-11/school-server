@@ -8,26 +8,33 @@
   </head>
   <body>
     <script>
-              const newPost=(post, addedAt=Date())=>({
-           ...post,
-           addedAt
-       })
-       const firstPost={
-           id:1, xauthor:'Elis'
-       }
+      const newPost = (post, addedAt = Date()) => ({
+        ...post,
+        addedAt,
+      });
+      const firstPost = {
+        id: 1,
+        author: "Elis",
+      };
       console.log(newPost(firstPost));
       console.table(newPost(firstPost));
       //--
-      const newTask=(task, addTask=Date())=>({
-          ...task,
-          addTask
-      })
-      const firstTask={
-          id:1,
-          author:'Elis',
-          title:'Task',
-      }
+      const newTask = (task, addTask = Date()) => ({
+        ...task,
+        addTask,
+      });
+      const firstTask = {
+        id: 1,
+        author: "Elis",
+        title: "Task",
+      };
+      const secondTask = {
+        id: 2,
+        author: "Lui",
+        title: "Exam",
+      };
       console.table(newTask(firstTask));
+      console.table(newTask(secondTask));
     </script>
   </body>
 </html>
