@@ -187,5 +187,13 @@ console.log(firstArray);
 //-- 6:12 MAP
 const secArray = [1, 2, 3, 4];
 console.log(secArray);
-const mapArray = secArray.map((el) => el * 2);
+const mapArray = secArray.map(el => el * 2);
 console.log(mapArray);
+//-- 6:17 glech
+const secArray2= [2, 3, 4]
+console.log(secArray2);
+const mapArray2= secArray2.map((el) =>{
+return el *3
+})
+console.log(mapArray2);
+console.log(secArray2);

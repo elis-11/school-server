@@ -7,49 +7,74 @@
 // students.pop
 // students.splice
 
-const students = ["Lui", "Ola", "Ami", "Maja", "Mik"];
-console.log(students);
-const mikIndex = students.findIndex((student) => {
-  return student === "Mik";
-});
-console.log("Hey".charCodeAt(1));
-console.log(mikIndex);
-students.splice(mikIndex, 1);
-console.log(students);
-//--map
-const arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
-const map1 = arr1.map((x) => x * 2);
-console.log(map1);
-const numbers = [1, 2, 3];
-const roots = numbers.map((num) => Math.sqrt(num));
-console.log(roots);
-//--map
-const kvArray = [
-  { key: 1, value: 10 },
-  { key: 2, value: 20 },
-  { key: 3, value: 30 },
-];
-const reformArray = kvArray.map(({ key, value }) => ({ [key]: value }));
-console.log(kvArray);
-console.log(reformArray);
-//--map
-const employees = ["John", "Rob", "Bob", "Jane", "Doe", "Anna"];
-console.log("Bob is Mitarbeite r in der Firma.");
-for (let index = employees.length; index > 0; index--) {
-  console.log(`${employees[index - 1]} ist Mitarbeiter in der Firma.`);
-}
-const salaries=[500, 400, 650, 390, 376, 677]
-const salaries22=[]
+//--5:33
+const mArray = [1, true, "Luis"];
+console.log(mArray);
+const myArray6 = [1, true, "Luis"];
+console.log(myArray6);
+mArray === myArray6;
+//--5:39 NEW ARRAY
 
-for(let salariesIndex of salaries){
-  salaries22.push(salaries[salariesIndex] +100)
-}
-console.log(salaries22);
-index=0
-while (index < salaries.length){
-  salaries22.push(salaries[index] +100)
-}index++
-//--array
-const myArray = ["John", "Lui", "Ola", "Ami", "Maja"]
-const myArray2= myArray
+//--
+const fruits = ["banana", "Apple"];
+console.log(fruits.length);
+console.log(fruits[1]);
+//--
+const myObject = {
+  0: 1,
+  1: 2,
+  2: 3,
+  length: 3,
+};
+console.log(myObject);
+const isArray = [1, 2, 3];
+console.log(isArray);
+//--
+const myArray = [1, true, "a"];
 console.log(myArray);
+console.log(myArray[0]);
+console.log(myArray[1]);
+console.log(myArray.length);
+myArray[4] = "Miki";
+console.log(myArray.length);
+console.log(myArray);
+myArray[3] = "Degen";
+console.log(myArray);
+console.log(myArray.length);
+myArray[5] = true;
+console.log(myArray.length);
+console.log(myArray);
+myArray.push(78);
+myArray.push(false);
+console.log(myArray);
+myArray.pop();
+const removedElement = myArray.pop();
+console.log(removedElement);
+myArray.unshift("Lila");
+console.log(myArray);
+myArray.unshift("abc");
+console.log(myArray);
+const removedWithShifting = myArray.shift();
+console.log(myArray);
+console.log(removedWithShifting);
+//-- 6:06 FOREACH
+const firstArray = [1, 2, 3];
+console.log(firstArray);
+firstArray.forEach((el) => console.log(el * 2));
+console.log(firstArray);
+firstArray.forEach((el) => console.log(el * 4));
+console.log(firstArray);
+//-- 6:12 MAP
+const secArray = [1, 2, 3, 4];
+console.log(secArray);
+const mapArray = secArray.map(el => el * 2);
+console.log(mapArray);
+//-- 6:17 glech
+const secArray2= [2, 3, 4]
+console.log(secArray2);
+const mapArray2= secArray2.map((el) =>{
+return el *3
+})
+console.log(mapArray2);
+console.log(secArray2);
+
