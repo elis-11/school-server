@@ -221,16 +221,45 @@ value
 // value1 && value2
 // ? myFunction1(value1, value2)
 // : myFunction2()
-//-- exsamppe 3
+
+console.log("---exsamppe 3---");
 let value3 = 17
 console.log(value3 >= 0 ? value3 : -value3);
-//-- exsamppe 4
+console.log("---exsamppe 4---");
+
 let value4 =-5
 const res = value4 >= 0 ? value4 : value4
 console.log(res);
-//-- exsamppe 5
+console.log("---exsamppe 5---");
+
 let value5 = -7
 const res1= value5 >= 0 ? value5 : -value5
 console.log(res1);
 //--7:22 loop
+console.log("--7:31 FOR--")
+for (let i=0; i<3; i++){
+  console.log(i);
+}
+console.log("---FOR for ARRAYS---");
+
+const myyArray = ['first', 'second', 'third'];
+for (let i=0; i<myyArray.length; i++) {
+  console.log(myyArray[i]);
+}
+console.log("---7:34 FOREACH for ARRAYS---");
+const mmyArray= ['first', 'second', 'third'];
+mmyArray.forEach((element, index)=> {
+console.log(element, index);
+})
+const mmyArrayy= ['first', 'second', 'third'];
+mmyArrayy.forEach((element)=> {
+console.log(element);
+})
+console.log("---7:36 WHILE---");
+
+
+console.log("------");
+console.log("------");
+console.log("------");
+console.log("------");
 
