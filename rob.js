@@ -1,4 +1,13 @@
-//---01-CURLYBRACETS
+// ! Most important array methods
+// ! students.find
+// ! students.filter
+// ! students.forEach
+// ! students.map
+// ! students.push
+// ! students.pop
+// ! students.splice
+
+//!---01-CURLYBRACETS
 console.log('---1---')
 const someVar = "Hallihallo"
 console.log(someVar)
@@ -7,7 +16,7 @@ console.log({ someVar }) // {} => very very very very very helpful for debugging
 const result1 = "1.45" + 10
 
 console.log({ result1 })
-//--02-vars-strings-numbers-math.js
+//!--02-vars-strings-numbers-math.js
 console.log('---2---');
 
 console.log("Willkommen: Hallo Dudes")
@@ -66,7 +75,7 @@ const parsedFloat = parseFloat( "1.4" )
 
 console.log( { parsedInt }) // Integer => FULL / Whole Numbers 1,2,3,100
 console.log( { parsedFloat }) // FLOAT => Floating numbers with digits after comma, 1.45, 2.88777
-//---/03-fruechte-spass-operators.js 
+//!--03-fruechte-spass-operators.js 
 console.log('---3---');
 let apples = 20
 let oranges = 30
@@ -80,7 +89,7 @@ console.log(
   "ist die Summe aus Mangos und Äpfeln gleich Orangen minus Mangos ?",
   MangosplusÄpfeln >= OrangenminusMangos
 );
-//-- 04-nan
+//!-- 04-nan
 console.log('---4---');
 // const htmlInputPrice = "30" // => we cannot calculate with fucking strings. so dont do it!
 
@@ -89,7 +98,7 @@ const hasNoNumber = parseInt("aaaaaaa")
 
 console.log( { hasNumber } )
 console.log( { hasNoNumber } ) // NaN => Not a Number => Javascripts way tp tell us we tried to parse numbers out of shit
-//-- 05-strings
+//!-- 05-strings
 console.log('---5---');
 const name = "Marwyn Schuffold"
 
@@ -107,7 +116,7 @@ console.log( name.includes("Obi wan") ) // this will give false, because Obi wan
 console.log( { firstname } )
 console.log( { lastname })
 console.log( { lastNameBySlice })
-//-- 06 if else
+//!-- 06 if else
 console.log('---6---');
 {/* <input type="text" name="wochentag" />  MO, DI, MI, DO, FR, SA, SO  */}
 
@@ -134,7 +143,7 @@ else if( wochentag == "Di") {
 else {
   console.log( "Glück gehabt! Du bist noch nicht dran mit Putzen" )
 }
-//-- 07 random
+//!-- 07 random
 console.log('---7 random---');
 // Alle Wochentage => ARRAY of strings
 const wochentage1 = [ "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" ]
@@ -147,15 +156,15 @@ console.log( { randomIndex1 } )
 
 console.log( wochentage1[ randomIndex1 ] )
 
-// ACCESS array elements by index
-// console.log(wochentage1[0])
-// console.log(wochentage1[1])
-// console.log(wochentage1[2])
-// console.log(wochentage1[3])
-// console.log(wochentage1[4])
-// console.log(wochentage1[5])
-// console.log(wochentage1[6])
-//-- 08 for loops
+//  ACCESS array elements by index
+//  console.log(wochentage1[0])
+//  console.log(wochentage1[1])
+//  console.log(wochentage1[2])
+//  console.log(wochentage1[3])
+//  console.log(wochentage1[4])
+//  console.log(wochentage1[5])
+//  console.log(wochentage1[6])
+//!-- 08 for loops
 console.log('---08 for loops---');
 
 // 1. **Addition.**
@@ -185,8 +194,6 @@ for (let i = START_ITEM; i <= MAX_ITEM; i++) {
 console.log( "Aufgabe 1 result:", { summe } ) // { summe: 210 }
 // console.log( { name: "Rob" })
 
-
-
 // 2. **Es befinden sich i Bierflaschen an der Wand.**
 // Schreiben Sie ein Programm, das ausgibt: "Es befindet sich 1 Bierflasche an der Wand." "Es befinden sich 2 Bierflaschen an der Wand", bis es fünf Flaschen sind.
 
@@ -210,7 +217,7 @@ for( let i=1; i<=5; i++) {
 for( let i = 0; i<5; i++ ) {
   console.log(i)
 }
-//-- 09 arrays
+//!-- 09 arrays
 console.log('---09 arrays---');
 
 // const students = [] // Alexander Li
@@ -229,16 +236,14 @@ students.splice( robIndex, 1 ) // kill rob at index wherever it is!
 console.log( students )
 // return
 
-
-
-// Most important array methods
-// students.find
-// students.filter
-// students.forEach
-// students.map
-// students.push
-// students.pop
-// students.splice
+// ! Most important array methods
+// ! students.find
+// ! students.filter
+// ! students.forEach
+// ! students.map
+// ! students.push
+// ! students.pop
+// ! students.splice
 
 // return
 
@@ -292,7 +297,7 @@ for(let i=0; i< MAX_INDEX; i++ ) {
   // console.log( students[i] ) // grab student dynamically from array by index
   console.log("Sending email to " + students[i])
 }
-//-- 10 nested stuff
+//!-- 10 nested stuff
 console.log('---10 nested stuff---');
 
   
@@ -326,7 +331,7 @@ const students1 = [
     { name: "Hawaii", price: 5.99, image: "http://images.com/hawaii" },
     { name: "Funghi", price: 6.99, image: "http://images.com/funghi" },
   ]
-  //-- 11 nested numbers
+  //!-- 11 nested numbers
 console.log('---11 nested numbers---');
 // NESTED loops with numbers
 // for(let i=100; i<=1000; i = i + 100) {
@@ -356,7 +361,7 @@ const matrix = [
   //     console.log(i+""+j)
   //   }
   // }
-  //-- 12 palindrom
+  //!-- 12 palindrom
 console.log('---12 palindrom---');
 const word = "ôllô" // ollah => hallo = ollah = false
 
@@ -388,7 +393,7 @@ if( word === reverse ) {
 else {
   console.log(`Naaaah, ${word} is not a fuck*** palindrome! Try again`)
 }
-//-- 13 Function
+//!-- 13 Function
 console.log('---13 Function---');
 // FUNCTION DECLARION
 
@@ -408,7 +413,7 @@ const sayMyLastName = () => {
 
 
 sayMyLastName()
-//-- 14 functions-return-vs-noreturn
+//!-- 14 functions-return-vs-noreturn
 console.log('---14 functions-return-vs-noreturn---');
 const persons = [ 'Rob', 'Ahmed', 'Alaa' ]
 
@@ -450,7 +455,7 @@ const getPeopleUppercased = () => {
 const result2 = getPeopleUppercased() // whatever the function returns, will be stuffed into variable "result"
 
 console.log( result2 )
-//--15 scrope intro
+//!--15 scrope intro
 console.log('---15 scrope intro---');
 const persons3 = [ 'Rob', 'Ahmed', 'Alaa' ]
 
@@ -477,7 +482,7 @@ console.log( result3 )
 // It belongs to the function only! (kind of its "property")
 // We call that the SCOPE of the function 
 // console.log( arrPersonsU )  
-//-- 16 scope
+//!-- 16 scope
 console.log('---16 scope---');
 const a = "a"
 const b = "b"
@@ -496,7 +501,7 @@ function child() {
 // we say that "c" belongs to the "SCOPE" of the function
 // And "c" does NOT belong to the scope of the parent!
 child()
-//-- 17 params
+//!-- 17 params
 console.log('---17 params---');
 
 // INPUT for new identity card
@@ -548,7 +553,7 @@ console.log('---17 params---');
     firstname1, lastname1, birthDate, height, eyeColor 
   )
   console.log( output )
-  //-- 18 break
+  //! -- 18 break
 console.log('---18 break---');
 for(let i=0; i<8; i++) {
 
@@ -560,7 +565,7 @@ for(let i=0; i<8; i++) {
   // IMPORTANT! 
   // Break does NOT break just the IF!
   // Break terminates the whole FOR LOOP! 
-  //-- 19-find-item-case-insensitive.
+  // !-- 19-find-item-case-insensitive.
 console.log('---19-find-item-case-insensitive.---');
 
 // const arrKeywords = [ "shit", "fuck", "fuck the corona", "corona", "bill gates" ]
@@ -581,7 +586,7 @@ const searchPizza = ( search  ) => {
 
 let found = searchPizza( "haWAii" )
 console.log( found )
-//-- 20-array-in-or-outside-function
+// !-- 20-array-in-or-outside-function
 console.log('---20-array-in-or-outside-function---');
 // Where to put f*** array? in or outside function?
 
@@ -605,7 +610,7 @@ const checkSpam = ( text ) => {
     return false
   }
   console.log ( checkSpam("fauci invented the whole thing ") )
-  //-- 21-capizalize-string
+  // !-- 21-capizalize-string
 console.log('---21-capizalize-string---');
   
 // capitalize => just make FIRST letter uppercase
@@ -655,7 +660,7 @@ const capitalize = ( strWord ) => {
   
   const result4 = capitalizeWords( "when is all that stuff finally over" )
   console.log( result4 )
-  //-- 22-for-in-vs-of-vs-foreach
+  // !-- 22-for-in-vs-of-vs-foreach
 console.log('---22-for-in-vs-of-vs-foreach---');
 const arrPizzas = ['hawaii', 'funghi', 'teriyaki']
 
@@ -674,7 +679,7 @@ arrPizzas.forEach( (value, index) => {
   console.log( index, value)
 //   console.log(value, index)
 })
-//23-1 tests
+// ! 23-1 tests
 console.log('---23-1 tests---');
 console.log( 0 + 1 ) // two numbers? AHA! => add them => 1
 console.log( "0" + 15 + 5 )  // one part of formula is a STRING? => JS concatenates stuff!

@@ -256,8 +256,70 @@ mmyArrayy.forEach((element)=> {
 console.log(element);
 })
 console.log("---7:36 WHILE---");
+let i=0
+while (i<5) {
+  console.log(i);
+  i++
+}
+console.log("---7:41 DO WHILE---");
+let j=0
+do{
+  console.log(j);
+  j++
+}while(j<4);
 
+console.log("---extra---");
+// key={index, Math.random()}
+console.log("--- 7:42 DO WHILE AGAIN---");
+let k=10
+do{
+  console.log(k);
+  k++
+}while(k<5)
+console.log("---7:43 FOR IN---");
+const isObject= {
+  s:3,
+  r:true,
+  z:'abc'
+}
+for (const key in isObject) {
+  console.log(key, isObject[key]);
+}
+console.log("---oder FOREACH---");
+Object.keys(isObject).forEach(key=>{
+  console.log(key, isObject[key]);
+})
+console.log("---/:47 oder FOREACH for OBJECTS---");
+Object.values(isObject).forEach(value=>{
+  console.log(value);
+})
+console.log("---7:54 FOR OF for STRING---");
+const iString='Hey'
+for (const letter of iString){
+  console.log((letter));
+}
+console.log("---FOREACH for ARRAYS---");
+const iArray=[true, 10, 'abc', null]
+iArray.forEach(element=>{
+  console.log(element);
+})
+console.log("------");
+const items = ['item1', 'item2', 'item3'];
+const copyItems = [];
 
+// before
+// for (let i = 0; i < items.length; i++) {
+//   copyItems.push(items[i]);
+// }
+
+// after
+items.forEach((item) => {
+  copyItems.push(item);
+});
+console.log(copyItems);
+console.log("------");
+const saName = 'Luis'
+console.log("------");
 console.log("------");
 console.log("------");
 console.log("------");
