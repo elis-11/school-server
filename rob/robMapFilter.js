@@ -4,85 +4,109 @@ const books = [
     author: "Johann Kafka",
     year: 2004,
     edition: 5000,
+    fname: 'Leon'
   },
   {
     title: "Stolz und Vorteil",
     author: "Jane Austen",
     year: 2001,
     edition: 8000,
+    fname: 'Meon'
   },
   {
     title: "Love & Devolution",
     author: "Erica James",
     year: 2011,
     edition: 1000,
+    fname: 'Amon'
   },
 ];
 
 console.log("--1-");
 console.log({ books });
-
-// Map kann man nutzen, um Infos zu EXTRACTEN (also nur TEIL-Informaton)
+//! Map kann man nutzen, um Infos zu EXTRACTEN (also nur TEIL-Informaton)
 const bookTitles = books.map((book) => {
   return book.title; // wir wollen von allen Objects NUR den Titel!
 });
 console.log(bookTitles);
 
-const bookAuthor = books.map((book) => {
-  return book.author;
-});
+const bookAuthor=books.map((book)=>{
+    return book.author
+})
 console.log(bookAuthor);
-
-const bookYear = books.map((book) => {
-  return book.year;
-});
+bookYear= books.map((book)=>{
+    return book.year
+})
 console.log(bookYear);
-const bookEdition = books.map((book) => {
-  return book.edition;
-});
+const bookEdition=books.map((book)=>{
+    return book.edition
+})
 console.log(bookEdition);
-
+console.log('-2-toUpperCase-');
 // update title von JEDEM BUCH zu uppercase
 const booksUpdated = books.map((book) => {
   // update the title => achtung => hier verändern wir das ORIGINAL object
   book.title = book.title.toUpperCase();
   return book; // map PUSHT (!) das returnte item in den booksUpdated array !
 }); // ACHTUNG: wenn wir ein Object in map updaten, wird das ORIGINAL verändert!
-console.log("--3-");
 console.log({ booksUpdated });
+const authorUpdate= books.map((book) => {
+    book.author=book.author.toUpperCase()
+    return book
+})
+console.log(authorUpdate);
+const fnameUpdate= books.map((book)=>{
+    book.fname=book.fname.toUpperCase()
+    return book
+})
+console.log(fnameUpdate);
 
-console.log("-4-");
+//! FILTER
+console.log("-3-filter-");
 const books1 = [
   { title: "Das Café am Rande der Welt", author: "Johann Kafka" },
+  { title: "Move", author: "Erica Austen" },
   { title: "Stolz und Vorteil", author: "Jane Austen" },
   { title: "Anna", author: "Jane Austen" },
   { title: "Jane Austen Self Biography", author: "Jane Austen" },
   { title: "Love & Devolution", author: "Erica James" },
+  { title: "Love", author: "Erica James" },
+  { title: "Devolution", author: "Erica James" },
 ];
 
 // FILTER
 // => durchloopt einen Array und sucht Items nach einem bestimmten Kriterium
 // => alle Items, die auf das Kriterium passen => pushe sie in einen Array
 
-const booksJaneAusten = books1.filter((book) => {
-  return book.author === "Jane Austen"; // true / false
+const booksJaneAusten = books1.filter((book1) => {
+  return book1.author === "Jane Austen"; // true / false
 });
 
+console.log("-3-books1");
 console.log(books1);
-console.log("-5-");
-
+console.log("-3-booksJA");
 console.log(booksJaneAusten);
 
-// FILTER by partial term somewhere in the word (we dont know the exact position!)
+const booksEJ=books1.filter((book1)=>{
+    return book1.author=== 'Erica James'
+})
+console.log("-3-booksEJ");
+console.log(booksEJ);
+
+const bookJK=books1.filter((book1)=>{
+    return book1.author==='Johann Kafka'
+})
+console.log('-3-booksJK-');
+console.log(bookJK);
+
+//! FILTER by partial term somewhere in the word (we dont know the exact position!)
 const booksAusten = books1.filter((book) => {
   // includes helps to find something in a string (position does not matter
   return book.author.includes("Austen"); // true / false
 });
-console.log("--6-");
+console.log("-4 filter-");
 console.log(books1);
-console.log("--7-");
 console.log(booksAusten);
-console.log("--8-");
 console.log("--");
 const books2 = [
   { title: "Das Café am Rande der Welt", author: "Johann Kafka" },
@@ -96,19 +120,20 @@ const books2 = [
 // Search Function by autor
 const searchBooksByAuthor = (author) => {
   // loop through all books2
-  const booksSearched = books2.filter((book) => {
-    // if book includes the given author => return true (=> push into new array)
-    return book.author.includes(author); // true / false
+  const booksSearched = books2.filter((book2) => {
+    // if book2 includes the given author => return true (=> push into new array)
+    return book2.author.includes(author); // true / false
   });
 
   // return the array with all books2 which were filtered out
   return booksSearched;
 };
-
+console.log("-5-search by author");
 // search by author
 console.log(searchBooksByAuthor("Kafka"));
 console.log(searchBooksByAuthor("Austen"));
-console.log("--");
+//! IF
+console.log("-6 if-");
 // mit freundlichem Sponsoring von Marvin Luther King
 function isPrime(zahl) {
   for (let i = 2; i < zahl; i++) {
@@ -140,8 +165,8 @@ const primeNumbers = numbers.filter((number) => {
 });
 
 console.log(primeNumbers);
-console.log("--");
 
+console.log("-7-");
 // **7. Wörterbuch.**
 // Erstellen Sie eine Funktion, die eine Zeichenkette und ein Array mit Wörtern annimmt und ein gefiltertes Array
 // mit den Wörtern zurückgibt, die mit denselben Buchstaben beginnen wie die Zeichenkette.
@@ -195,7 +220,7 @@ console.log(arrWordsSearch.sort());
 
 // })
 
-// books2.filter( (book) => {
+// books2.filter( (book2) => {
 
 // })
 
