@@ -47,20 +47,128 @@ let createBlog = (title, body) => {
 };
 // createBlog();
 // console.log(createBlog('Blog Tite', ''));
-console.log(createBlog('Blog Tite &', 'Blog body'));
+console.log(createBlog("Blog Tite &", "Blog body"));
 
+console.log("-7-IF-");
+const newBlog = (title1, blog1) => {
+  if (!title1) {
+    throw new Error("Title1 is required");
+  }
+  if (!blog1) {
+    throw new Error("Blog is required");
+  }
+  return `${title1} ${blog1}`;
+};
+console.log(newBlog("Tite1 &", "Blog1"));
+
+console.log("-8-this-");
+const sayHi = () => {};
+console.log(this);
+
+console.log("-9-nepal-");
+let nepal = {
+  // add property
+  montains: ["Everest", "Kasbek", "Annapurna"],
+  // add method
+  printWithDash: function () {
+    setTimeout(() => console.log(this.montains.join(" - ")), 2000);
+  },
+};
+// console.log(nepal.montains);
+nepal.printWithDash();
+console.log(".8-todo-");
+let thingsToDo = {
+  morning: "Exercise",
+  afternoon: "Work",
+  evening: "Code",
+  night: ["Sleep", "Dream"],
+};
+console.log(thingsToDo);
 console.log("--");
-const newBlog=(title1, blog1)=>{
-if (!title1) {
-  throw new Error("Title1 is required");
+let { morning, afternoon } = thingsToDo;
+morning = "Run";
+console.log(morning, " - ", afternoon);
+
+console.log("-11-uniStudent-");
+let uniStudent = (student) => {
+  console.log(`${student.name} from ${student.university}`);
+};
+uniStudent({
+  name: "Luis",
+  university: "University of Sydney",
+});
+
+console.log("-12-uniStudent2-");
+let uniStudent2 = (student2) => {
+  let { name2, university2 } = student2;
+  console.log(`${name2} from ${university2}`);
+};
+uniStudent2({
+  name2: "Lars",
+  university2: "University of Hamburg",
+});
+
+console.log("-13-uniStudent3-");
+let uniStudent3 = ({ name3, university3 }) => {
+  console.log(`${name3} from ${university3}`);
+};
+uniStudent3({
+  name3: "Mario",
+  university3: "University of Berlin",
+});
+
+console.log("-14-Array-");
+let [firstMountain] = ["Everest", "Fish Tail", "Annapurna"];
+console.log(firstMountain);
+let [, secondMountain] = ["Everest", "Fish Tail", "Annapurna"];
+console.log(secondMountain);
+let [, , thirdMountain] = ["Everest", "Fish Tail", "Annapurna"];
+console.log(thirdMountain);
+
+console.log(".9-Restructuring-");
+const nameE = "Everest";
+const height = 8848;
+const output = function () {
+  console.log(`Mt. ${this.nameE} is ${this.height} meter tall`);
+};
+
+const adventureClimbing = { nameE, height, output };
+// console.log(adventureClimbing);
+adventureClimbing.output();
+
+console.log("-16-");
+const newClimbing = {
+  nameC: "Everest",
+  heightC: 8848,
+  output() {
+    console.log(`Mt. ${this.nameC} is ${this.heightC} meter tall`);
+  },
+};
+newClimbing.output();
+
+console.log(".10-spreadOperator-array-");
+const areMountains = ["Everest", "Fish Tail", "Annapurna"];
+const twoMountains = ["Fiji", "Kasbek"];
+const allMountains = [...areMountains, ...twoMountains];
+console.log(allMountains);
+
+console.log("-18-spreadOperator-objects");
+const day={
+  breakfast: 'toast',
+  lunch: 'rice'
 }
-if (!blog1) {
-  throw new Error("Blog is required");
+const night={
+  dinner: 'cheese'
 }
-return `${title1} ${blog1}`;
-}
-console.log(newBlog('Tite1 &', 'Blog1'));
-console.log("--");
+const picnic={...day, ...night}
+console.log(picnic );
+
+console.log("-19-rest-");
+const rivers= ['Don', 'Lena', 'Terek', 'Argun', 'Barry', 'Elba']
+const [first, ...rest] =rivers
+console.log(first);
+console.log(rest);
+
 console.log("--");
 console.log("--");
 console.log("--");
