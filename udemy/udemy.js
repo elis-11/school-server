@@ -153,22 +153,67 @@ const allMountains = [...areMountains, ...twoMountains];
 console.log(allMountains);
 
 console.log("-18-spreadOperator-objects");
-const day={
-  breakfast: 'toast',
-  lunch: 'rice'
-}
-const night={
-  dinner: 'cheese'
-}
-const picnic={...day, ...night}
-console.log(picnic );
+const day = {
+  breakfast: "toast",
+  lunch: "rice",
+};
+const night = {
+  dinner: "cheese",
+};
+const picnic = { ...day, ...night };
+console.log(picnic);
 
 console.log("-19-rest-");
-const rivers= ['Don', 'Lena', 'Terek', 'Argun', 'Barry', 'Elba']
-const [first, ...rest] =rivers
+const rivers = ["Don", "Lena", "Terek", "Argun", "Barry", "Elba"];
+const [first, ...rest] = rivers;
 console.log(first);
 console.log(rest);
 
+console.log("-20-r-map-");
+const books = [
+  { title: "Das Café am Rande der Welt", author: "Johann Kafka" },
+  { title: "Move", author: "Erica Austen" },
+  { title: "Stolz und Vorteil", author: "Jane Austen" },
+  { title: "Anna", author: "Jane Austen" },
+  { title: "Jane Austen Self Biography", author: "Jane Austen" },
+  { title: "Love & Devolution", author: "Erica James" },
+  { title: "Love", author: "Erica James" },
+  { title: "Devolution", author: "Erica James" },
+];
+const articles=[
+  { title: "Die Welt", author: "Johann Kafka"},
+  { title: "Love", author: "Johann Kafka"},
+  { title: "Salz", author: "Johann Kafka"},
+  { title: "Die Maus", author: "Johann Kafka"},
+]
+console.log("-map-");
+const bookTitles=books.map((book)=> {
+  return book.title
+})
+console.log({bookTitles});
+const bookAuthor=books.map((book)=>{
+  return book.author
+})
+console.log(bookAuthor);
+
+
+console.log("-filter-");
+const bookJA= books.filter((book)=>{
+  return book.author ==='Jane Austen'
+})
+console.log(bookJA);
+const booksEJ=books.filter((book)=>{
+  return book.author==='Erica Austen'
+})
+console.log(booksEJ);
+
+
+
+console.log("-spread-operator-");
+const allReading= {...books, ...articles}
+console.log(allReading);
+
+console.log("--");
 console.log("--");
 console.log("--");
 console.log("--");

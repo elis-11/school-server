@@ -4,21 +4,21 @@ const books = [
     author: "Johann Kafka",
     year: 2004,
     edition: 5000,
-    fname: 'Leon'
+    fname: "Leon",
   },
   {
     title: "Stolz und Vorteil",
     author: "Jane Austen",
     year: 2001,
     edition: 8000,
-    fname: 'Meon'
+    fname: "Meon",
   },
   {
     title: "Love & Devolution",
     author: "Erica James",
     year: 2011,
     edition: 1000,
-    fname: 'Amon'
+    fname: "Amon",
   },
 ];
 
@@ -30,19 +30,19 @@ const bookTitles = books.map((book) => {
 });
 console.log(bookTitles);
 
-const bookAuthor=books.map((book)=>{
-    return book.author
-})
+const bookAuthor = books.map((book) => {
+  return book.author;
+});
 console.log(bookAuthor);
-bookYear= books.map((book)=>{
-    return book.year
-})
+bookYear = books.map((book) => {
+  return book.year;
+});
 console.log(bookYear);
-const bookEdition=books.map((book)=>{
-    return book.edition
-})
+const bookEdition = books.map((book) => {
+  return book.edition;
+});
 console.log(bookEdition);
-console.log('-2-toUpperCase-');
+console.log("-2-toUpperCase-");
 // update title von JEDEM BUCH zu uppercase
 const booksUpdated = books.map((book) => {
   // update the title => achtung => hier verändern wir das ORIGINAL object
@@ -50,15 +50,15 @@ const booksUpdated = books.map((book) => {
   return book; // map PUSHT (!) das returnte item in den booksUpdated array !
 }); // ACHTUNG: wenn wir ein Object in map updaten, wird das ORIGINAL verändert!
 console.log({ booksUpdated });
-const authorUpdate= books.map((book) => {
-    book.author=book.author.toUpperCase()
-    return book
-})
+const authorUpdate = books.map((book) => {
+  book.author = book.author.toUpperCase();
+  return book;
+});
 console.log(authorUpdate);
-const fnameUpdate= books.map((book)=>{
-    book.fname=book.fname.toUpperCase()
-    return book
-})
+const fnameUpdate = books.map((book) => {
+  book.fname = book.fname.toUpperCase();
+  return book;
+});
 console.log(fnameUpdate);
 
 //! FILTER
@@ -87,16 +87,16 @@ console.log(books1);
 console.log("-3-booksJA");
 console.log(booksJaneAusten);
 
-const booksEJ=books1.filter((book1)=>{
-    return book1.author=== 'Erica James'
-})
+const booksEJ = books1.filter((book1) => {
+  return book1.author === "Erica James";
+});
 console.log("-3-booksEJ");
 console.log(booksEJ);
 
-const bookJK=books1.filter((book1)=>{
-    return book1.author==='Johann Kafka'
-})
-console.log('-3-booksJK-');
+const bookJK = books1.filter((book1) => {
+  return book1.author === "Johann Kafka";
+});
+console.log("-3-booksJK-");
 console.log(bookJK);
 
 //! FILTER by partial term somewhere in the word (we dont know the exact position!)
@@ -227,6 +227,30 @@ console.log(arrWordsSearch.sort());
 // blogPosts.filter( (blogPost) => {
 
 // })
+
+console.log("-8.1-spreadOperator-array-");
+const areMountains = ["Everest", "Fish Tail", "Annapurna"];
+const twoMountains = ["Fiji", "Kasbek"];
+const allMountains = [...areMountains, ...twoMountains];
+console.log(allMountains);
+
+console.log("-8.2-spreadOperator-objects");
+const day = {
+  breakfast: "toast",
+  lunch: "rice",
+};
+const night = {
+  dinner: "cheese",
+};
+const picnic = { ...day, ...night };
+console.log(picnic);
+
+console.log("-8.3-rest-");
+const rivers = ["Don", "Lena", "Terek", "Argun", "Barry", "Elba"];
+const [first, ...rest] = rivers;
+console.log(first);
+console.log(rest);
+
 console.log("--");
 console.log("--");
 console.log("--");

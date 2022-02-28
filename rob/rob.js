@@ -100,17 +100,17 @@ console.log( { hasNumber } )
 console.log( { hasNoNumber } ) // NaN => Not a Number => Javascripts way tp tell us we tried to parse numbers out of shit
 //!-- 05-strings
 console.log('---5---');
-const name = "Marwyn Schuffold"
+const isName = "Marwyn Schuffold"
 
-const firstname = name.substring(0, 6)
-// const lastname = name.substring(7, 16) // grab lastname
-const lastname = name.substring(7) // grab all from index 7 till the end
+const firstname = isName.substring(0, 6)
+// const lastname = isName.substring(7, 16) // grab lastname
+const lastname = isName.substring(7) // grab all from index 7 till the end
 
-// const lastChar = name.substring(7, 3)
-const lastNameBySlice = name.slice(-9)
+// const lastChar = isName.substring(7, 3)
+const lastNameBySlice = isName.slice(-9)
 
-console.log( name.includes("wyn") ) // this will give true, because "wyn" is in string
-console.log( name.includes("Obi wan") ) // this will give false, because Obi wan is not in string
+console.log( isName.includes("wyn") ) // this will give true, because "wyn" is in string
+console.log( isName.includes("Obi wan") ) // this will give false, because Obi wan is not in string
 
 
 console.log( { firstname } )
