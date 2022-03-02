@@ -163,6 +163,22 @@ const night = {
 const picnic = { ...day, ...night };
 console.log(picnic);
 
+console.log("-spread-operator-");
+const article = {
+  title: "Die Welt",
+  author: "Love",
+  biuz: "Satz",
+  ghfjsdkj: "Die Maus",
+};
+const journal = {
+  shdahkd: "My Welt",
+  lsadlajl: "My Love",
+  ahdlshkl: "Salz",
+  ahs: "Das Haus",
+};
+const allReading = { ...journal, ...article };
+console.log(allReading);
+
 console.log("-19-rest-");
 const rivers = ["Don", "Lena", "Terek", "Argun", "Barry", "Elba"];
 const [first, ...rest] = rivers;
@@ -177,43 +193,104 @@ const books = [
   { title: "Anna", author: "Jane Austen" },
   { title: "Jane Austen Self Biography", author: "Jane Austen" },
   { title: "Love & Devolution", author: "Erica James" },
-  { title: "Love", author: "Erica James" },
   { title: "Devolution", author: "Erica James" },
 ];
-const articles=[
-  { title: "Die Welt", author: "Johann Kafka"},
-  { title: "Love", author: "Johann Kafka"},
-  { title: "Salz", author: "Johann Kafka"},
-  { title: "Die Maus", author: "Johann Kafka"},
-]
 console.log("-map-");
-const bookTitles=books.map((book)=> {
-  return book.title
-})
-console.log({bookTitles});
-const bookAuthor=books.map((book)=>{
-  return book.author
-})
-console.log(bookAuthor);
-
+const bookTitle = books.map((book) => {
+  return book.title;
+});
+console.log(bookTitle);
 
 console.log("-filter-");
-const bookJA= books.filter((book)=>{
-  return book.author ==='Jane Austen'
+const bookEJ = books.filter((book) => {
+  return book.author === "Erica James";
+});
+console.log(bookEJ);
+console.log("-map & filter ");
+const students = [
+  {
+    name: "Alica",
+    language: "german",
+    skills: "computer MongoDB",
+    hobby: "music",
+  },
+  {
+    name: "Luis",
+    language: "english",
+    skills: "computer game",
+    hobby: "music",
+  },
+  { name: "Tony", language: "english", 
+  skills: "computer game", hobby: "sport" },
+  {
+    name: "Lisa",
+    language: "english",
+    skills: "computer technic",
+    hobby: "sport",
+  },
+  {
+    name: "Peter",
+    language: "german",
+    skills: "computer game",
+    hobby: "music",
+  },
+];
+const studentsName = students.map((student) => {
+  return student.name;
+});
+console.log(studentsName);
+const studentsHobbys = students.filter((student) => {
+  return student.hobby === "music";
+});
+console.log(studentsHobbys);
+console.log("-map.toUpperCase-");
+const studentsUpd = students.map((student) => {
+  student.name = student.name.toUpperCase();
+  return student;
+});
+console.log(studentsUpd);
+console.log("------------------");
+const searchbySkills = (skills) => {
+
+  const studentsSearched = students.filter((student) => {
+    return student.skills.includes(skills);
+  });
+
+  return studentsSearched;
+};
+console.log(searchbySkills("technic"));
+console.log(searchbySkills("game"));
+console.log(searchbySkills("MongoDB"));
+console.log("--------IF----------");
+function isPrime(zahl){
+  for (let i = 2; i < zahl; i++){
+    if (zahl % i===0){
+      return false
+    }
+  }
+  return true
+}
+const numbers=[];
+for  (let i=1; i<= 100; i++){
+  numbers.push(i)
+}
+  console.log(numbers);
+
+const primeNumbers=numbers.filter((number)=>{
+  return isPrime(number)
 })
-console.log(bookJA);
-const booksEJ=books.filter((book)=>{
-  return book.author==='Erica Austen'
-})
-console.log(booksEJ);
+console.log(primeNumbers);
 
 
 
-console.log("-spread-operator-");
-const allReading= {...books, ...articles}
-console.log(allReading);
 
-console.log("--");
+console.log("------------------");
+console.log("------------------");
+console.log("------------------");
+console.log("------------------");
+console.log("------------------");
+console.log("------------------");
+
 console.log("--");
 console.log("--");
 console.log("--");

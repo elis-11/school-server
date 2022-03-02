@@ -30,18 +30,6 @@ const bookTitles = books.map((book) => {
 });
 console.log(bookTitles);
 
-const bookAuthor = books.map((book) => {
-  return book.author;
-});
-console.log(bookAuthor);
-bookYear = books.map((book) => {
-  return book.year;
-});
-console.log(bookYear);
-const bookEdition = books.map((book) => {
-  return book.edition;
-});
-console.log(bookEdition);
 console.log("-2-toUpperCase-");
 // update title von JEDEM BUCH zu uppercase
 const booksUpdated = books.map((book) => {
@@ -55,11 +43,6 @@ const authorUpdate = books.map((book) => {
   return book;
 });
 console.log(authorUpdate);
-const fnameUpdate = books.map((book) => {
-  book.fname = book.fname.toUpperCase();
-  return book;
-});
-console.log(fnameUpdate);
 
 //! FILTER
 console.log("-3-filter-");
@@ -146,7 +129,7 @@ function isPrime(zahl) {
 
 // filtere prime numbers aus array
 
-// first create an empty arra
+// first create an empty array
 const numbers = [];
 
 // count from 1 to 100
@@ -251,7 +234,60 @@ const [first, ...rest] = rivers;
 console.log(first);
 console.log(rest);
 
-console.log("--");
-console.log("--");
+console.log("-1.matr-");
+const bookMarts = [
+  { title: "Antworten auf schwierige Fragen", author: "Steven Hawking" },
+  { title: "Eloquent JavaScript", author: "Unbekannt" },
+  { title: "Schachnovelle", author: "Stefan Zweig", },
+  { title: "Der Prozess", author: "Kafka", },
+  { title: "Die Verwandlung", author: "Kafka", },
+  { title: "Die PhysikerIn", author: "Dürrenmatt",  },
+]
+console.log(bookMarts);
+console.log('---------filter----------');
+const booksKafka1=bookMarts.filter((bookMart)=>{
+  return bookMart.author==='Kafka'
+})
+console.log(booksKafka1);
+console.log('----------for-let-------');
+const booksKafka2=[]
+for (let bookMart of bookMarts){
+  if( bookMart.author==='Kafka'){
+    booksKafka2.push(bookMart)
+  }
+}
+console.log(booksKafka2);
+console.log('-------map----------');
+const booksKafka3=bookMarts.map((bookMart)=>{
+  return bookMart.author==='Kafka'
+})
+console.log(booksKafka3);
+console.log('-------find------');
+const result=bookMarts.find((bookMart)=>{
+  return bookMart.author==='Kafka'
+})
+console.log(result);
+console.log("----------map---------");
+const booksTitles2=bookMarts.map((bookMart)=>{
+  return bookMart.title
+})
+console.log(booksTitles2);
+
+const booksTitles4=bookMarts.map((bookMart)=>{
+  bookMart.title= bookMart.title.toUpperCase();
+  return bookMart;
+})
+// console.log();
+console.log({ bookMarts});
+console.log(booksTitles4);
+
+console.log("Willkommen: Hallo Dudes")
+
+let undso = "Ich bin undso"
+const undosweiter = "Ich bin undsoweiter"
+
+console.log(`Hello ${undso} und hier gehts weiter ${undosweiter}`);
+console.log(undso, undosweiter);
+
 console.log("--");
 console.log("--");
