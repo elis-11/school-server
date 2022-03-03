@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=Ba-ss43Iz2M&list=PLM7wFzahDYnGtO5c0u71KBj6uwIwPvWKa&index=8
+// https://www.youtube.com/watch?v=Y5YlT0Q1v28&list=PLM7wFzahDYnGtO5c0u71KBj6uwIwPvWKa&index=2
 console.log("----MAP----");
 let areNumbers = [1, 4, 23, 85, 44, -3, -1, 565];
 

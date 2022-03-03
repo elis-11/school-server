@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=sfIMbe4RLug&list=PLM7wFzahDYnGtO5c0u71KBj6uwIwPvWKa&index=6
+// https://www.youtube.com/watch?v=Y5YlT0Q1v28&list=PLM7wFzahDYnGtO5c0u71KBj6uwIwPvWKa&index=2
 console.log("----FILTER----");
 const lists = ["Hydrogen", "Helium", "Lithium", "Beryllium", 4, 7, 8, 1];
 const filterLists1 = lists.filter((list, index) => {

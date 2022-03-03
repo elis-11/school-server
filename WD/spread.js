@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=1WkcX_CNkqU&list=PLM7wFzahDYnGtO5c0u71KBj6uwIwPvWKa&index=11
 const a=[3,4,5]
 const b=['c', 'd', 'e']
 
