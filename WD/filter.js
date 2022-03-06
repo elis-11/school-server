@@ -79,3 +79,129 @@ const dolgs2 = clients
   .filter((client) => client.debt >= 10)
   .sort((a, b) => a.debt - b.debt);
 console.log(dolgs2);
+console.log('-----filter Rob------');
+const words = [ "Jack", "Yamen", "Michael", "Alaa" ] // Jack, Alaa
+const searchWord= (strSearch) =>{
+  const wordsFiltered=words.filter((word) =>{
+    return word.includes(strSearch)
+  })
+  return wordsFiltered
+}
+console.log(searchWord('e'));
+console.log('----- CRUD - CREATE - READ - UPDATE - DELETE-------');
+const books = [
+  {  _id: "b1", title: "Das Café am Rande der Welt", author: "Johann Kafka" },
+  {  _id: "b2", title: "Stolz und Vorurteil", author: "Jane Austen" },
+  {  _id: "b3", title: "Emma", author: "Jane Austen" },
+  {  _id: "b4", title: "Love & Devolution", author: "Erica James" },
+]
+console.log(books);
+console.log({books});
+console.log('----- CRUD - CREATE - READ - UPDATE - DELETE-------');
+
+// Add NEW BOOK OBJECT at end of array
+const addBook=(books, bookNew)=>{
+  const booksCopy=[...books]   // sozdali copiy
+  booksCopy.push(bookNew)      // added bookNew
+return booksCopy               // pokasat' sozdannuy copiy
+}
+//Delete a book from array
+const deleteBook=(strId)=>{
+  //Delete OBJECTS in  array using FILTER
+  const booksFiltered=books.filter((book)=>{
+return book._id !== strId
+  })
+return booksFiltered
+}
+const updateBook=()=>{
+}
+// Testing our CRUD
+console.log('----booksNew-----');
+const bookNew={title: 'New Book', author: 'John Smith'}
+const booksNew = addBook(books, bookNew)
+console.log({booksNew});
+console.log('----booksFiltered-----');
+const booksFiltered=deleteBook('b2')
+console.log({booksFiltered});
+
+console.log('---------');
+const wochentage = [ "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" ]
+console.log(wochentage);
+const numWochentage=wochentage.length
+const randomIndex= Math.floor( Math.random() * numWochentage  )
+const wochentag= wochentage[ randomIndex]
+console.log({wochentag});
+if(wochentag==='So'){
+  console.log( "Heute ist Sonntag. Küche putzen oder Geld weg!" );
+}else if(wochentag==='Mo'){
+  console.log("Heute ist Marwyn mit Bad dran!")
+}else if(wochentag==='Di'){
+  console.log("Nathalie muss den Flur saugen!")
+}else{
+  console.log( "Glück gehabt! Du bist noch nicht dran mit Putzen" )
+}
+console.log();
+console.log('---------');
+const wochentage2 = [ "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" ]
+const numWochentage2=wochentage2.length
+const randomIndex2 = Math.floor( Math.random() * numWochentage2  )
+console.log({randomIndex2});
+// console.log(wochentage[randomIndex2]);
+
+console.log(wochentage2[0]);
+console.log(wochentage2[1]);
+console.log(wochentage2[2]);
+console.log(wochentage2[3]);
+console.log(wochentage2[4]);
+console.log(wochentage2[5]);
+console.log(wochentage2[6]);
+console.log('-------kueche-------');
+const kueche = {
+  kuehlschrank: "Fridgy 123",
+  ofen: "Oven Owen",
+  spuelmaschine: "Spueli S45"
+}
+const kuecheCopy= {...kueche}
+kuecheCopy.ofen = 'Orlando'
+console.log({kueche});
+console.log(kuecheCopy);
+
+const kitchen = [ 'Ofen', 'Spuelmaschine', 'Kuehlschrank' ]
+const kitchenCopy=[...kitchen]
+console.log({kitchenCopy});
+console.log({kitchen});
+console.log('--------------');
+const kueche2 = {
+  kuehlschrank: "Fridgy 123",
+  ofen: "Oven Owen",
+  spuelmaschine: "Spueli S45"
+}
+let { ofen, spuelmaschine } = kueche
+
+ofen = "Neues Ofen-Modell"
+
+kueche.mikrowelle = "Mikro MX 1000"
+
+console.log( kueche2)
+
+console.log('----------kueche3-----');
+const kueche3 = {
+  kuehlschrank: "Fridgy 123",
+  ofen: "Oven Owen",
+  spuelmaschine: "Spueli S45"
+}
+
+// ALLOW USER to insert new key value data 
+const addItemToKueche = (key, value) => {
+  kueche3[key] = value // => kueche3.mikrowwelle = value
+}
+
+addItemToKueche("mikrowelle", "Mikro MX 1000" )
+addItemToKueche("wasserkocher", "Kochi K2")
+
+
+// HARDCODED => mikrowelle, wasserkocher
+// NACHTEIL => wir, die Coder, müssen wissen, was ins Object soll
+kueche3.mikrowelle = "Mikro MX 1000"
+kueche3.wasserkocher = "Kochi K2"
+console.log(kueche3);
