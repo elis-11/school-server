@@ -25,3 +25,12 @@ console.log(itsSet);
 let copyIsSet=Array.from(isSet)
 console.log(copyIsSet);
 console.log(copyIsSet[2]);
+
+// Most important array methods
+// students.find
+// students.filter
+// students.forEach
+// students.map
+// students.push
+// students.pop
+// students.splice
