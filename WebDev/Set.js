@@ -28,8 +28,8 @@ console.log(copyIsSet[2]);
 
 // Most important array methods
 // students.find
-// students.filter
 // students.forEach
+// students.filter
 // students.map
 // students.push
 // students.pop

@@ -20,7 +20,6 @@ console.log(robIndex);
 students.splice(robIndex, 1); // kill rob at index wherever it is!
 
 console.log(students);
-return;
 
 // Most important array methods
 // students.find
@@ -31,7 +30,6 @@ return;
 // students.pop
 // students.splice
 
-return;
 
 console.log("Vorher: ", students);
 
@@ -58,7 +56,6 @@ students.splice(3, 0, "Nathalie"); // insert Nathalie AT index 3 => push every d
 // delete TWO items starting from position 0
 // students.splice(0, 2) // splice => splice off => aussplittern => delete
 console.log("Nachher: ", students);
-return;
 
 // add "Alexander Li"
 

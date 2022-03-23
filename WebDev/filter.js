@@ -184,6 +184,7 @@ kueche.mikrowelle = "Mikro MX 1000"
 
 console.log( kueche2)
 
+
 console.log('----------kueche3-----');
 const kueche3 = {
   kuehlschrank: "Fridgy 123",
