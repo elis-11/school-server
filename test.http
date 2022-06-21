@@ -1,0 +1,10 @@
+@url = http://localhost:5555
+
+### Home
+GET {{url}}/
+
+### All Teachers
+GET {{url}}/teachers
+
+### All Students
+GET {{url}}/students

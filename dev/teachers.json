@@ -1,0 +1,5 @@
+[
+    {"firstname": "Robert", "lastname": "Ristock", "email": "rob@gmail.com", "password": "password", "city": "Berlin", "title": "Coach","experience": 5, "specialized": "Web Developer"},
+    {"firstname": "Julian", "lastname": "Wisskemann", "email": "julian@gmail.com", "password": "password", "city": "Berlin", "title": "Trainer","experience": 8, "specialized": "Online Marketing"},
+    {"firstname": "Gael", "lastname": "Freire", "email": "gael@gmail.com", "password": "password", "city": "Berlin", "title": "Trainer","experience": 1, "specialized": "Web Developer"}
+]
