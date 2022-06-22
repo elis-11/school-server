@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
+import { studentsRouter } from "./routes/students.router.js";
 import { teachersRouter } from "./routes/teachers.router.js";
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/teachers", teachersRouter);
+app.use("/students", studentsRouter);
 
 app.use((req, res, next) => {
   res.status(404).json({ error: `This route does not exist` });
