@@ -3,7 +3,7 @@ import express from "express";
 import mongoose from "mongoose";
 import { studentsRouter } from "./routes/students.router.js";
 import { teachersRouter } from "./routes/teachers.router.js";
-import {staffRouter } from "./routes/staff.router.js"
+import { employeesRouter } from "./routes/employees.router.js";
 dotenv.config();
 
 mongoose.connect(process.env.MONGO_URI);
@@ -18,14 +18,14 @@ app.get("/", (req, res) => {
 <div>Our routes:</div>
 <div>Home: <a href="/">/</a></div>
 <div>Teachers: <a href="/teachers">/teachers</a></div>
-<div>Staff: <a href="/staff">/staff</a></div>
+<div>Employees: <a href="/employees">/employees</a></div>
 <div>Students: <a href="/students">/students</a></div>
     `);
 });
 
 app.use("/teachers", teachersRouter);
 app.use("/students", studentsRouter);
-app.use("/staff", staffRouter);
+app.use("/employees", employeesRouter);
 
 app.use((req, res, next) => {
   res.status(404).json({ error: `This route does not exist` });

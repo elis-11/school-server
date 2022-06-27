@@ -1,7 +1,6 @@
 [
     {
-        "firstname": "Robert",
-        "lastname": "Neumann",
+        "name": "Robert Neumann",
         "image": "/images/cards/person008.jpg",
         "email": "robert@gmail.com",
         "password": "password",
@@ -12,8 +11,7 @@
         "specialized": "Web Developer"
     },
     {
-        "firstname": "Julian",
-        "lastname": "Pahl",
+        "name": "Julian Pahl",
         "image": "/images/cards/person010.jpg",
         "email": "julian@gmail.com",
         "password": "password",
@@ -24,8 +22,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Richard",
-        "lastname": "Werner",
+        "name": "Richard Werner",
         "image": "/images/cards/person018.jpg",
         "email": "richard@gmail.com",
         "password": "password",
@@ -36,8 +33,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Justin",
-        "lastname": "Richter",
+        "name": "Justin Richter",
         "image": "/images/cards/person006.jpg",
         "email": "justin@gmail.com",
         "password": "password",
@@ -48,8 +44,7 @@
         "specialized": "Career Support"
     },
     {
-        "firstname": "Curt",
-        "lastname": "Schulz",
+        "name": "Curt Schulz",
         "image": "/images/cards/person033.jpg",
         "email": "curt@gmail.com",
         "password": "password",
@@ -60,32 +55,29 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Karl",
-        "lastname": "Müller",
+        "name": "Karl Müller",
         "image": "/images/cards/person001.jpg",
         "email": "karl@gmail.com",
         "password": "password",
         "city": "Hamburg",
         "role": "Instructor",
-        "qualification": "Junior Instructor",
+        "qualification": "Career Support",
         "experience": 8,
-        "specialized": "Online Marketing"
+        "specialized": "Instructor"
     },
     {
-        "firstname": "Hugo",
-        "lastname": "Hoffmann",
+        "name": "Hugo Hoffmann",
         "image": "/images/cards/person002.jpg",
         "email": "hugo@gmail.com",
         "password": "password",
         "city": "Hamburg",
         "role": "Instructor",
-        "qualification": "Lead Instructor",
+        "qualification": "Career Support",
         "experience": 8,
-        "specialized": "Online Marketing"
+        "specialized": "Instructor"
     },
     {
-        "firstname": "Heiko",
-        "lastname": "Fuchs",
+        "name": "Heiko Fuchs",
         "image": "/images/cards/person003.jpg",
         "email": "heiko@gmail.com",
         "password": "password",
@@ -96,8 +88,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Gerda",
-        "lastname": "Berger",
+        "name": "Gerda Berger",
         "image": "/images/cards/person004.jpg",
         "email": "gerda@gmail.com",
         "password": "password",
@@ -108,8 +99,7 @@
         "specialized": "Web Developer"
     },
     {
-        "firstname": "Georg",
-        "lastname": "Martin",
+        "name": "Georg Martin",
         "image": "/images/cards/person005.jpg",
         "email": "georg@gmail.com",
         "password": "password",
@@ -120,8 +110,7 @@
         "specialized": "Web Developer"
     },
     {
-        "firstname": "Emil",
-        "lastname": "Otto",
+        "name": "Emil Otto",
         "image": "/images/cards/person007.jpg",
         "email": "emil@gmail.com",
         "password": "password",
@@ -132,8 +121,7 @@
         "specialized": "Web Developer"
     },
     {
-        "firstname": "Amelia",
-        "lastname": "Otto",
+        "name": "Amelia Otto",
         "image": "/images/cards/person009.jpg",
         "email": "amelia@gmail.com",
         "password": "password",
@@ -144,8 +132,7 @@
         "specialized": "Web Developer"
     },
     {
-        "firstname": "Anna",
-        "lastname": "Richter",
+        "name": "Anna Richter",
         "image": "/images/cards/person011.jpg",
         "email": "anna@gmail.com",
         "password": "password",
@@ -156,8 +143,7 @@
         "specialized": "Web Developer"
     },
     {
-        "firstname": "Artur",
-        "lastname": "Sorge",
+        "name": "Artur Sorge",
         "image": "/images/cards/person012.jpg",
         "email": "artur@gmail.com",
         "password": "password",
@@ -168,8 +154,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Daria",
-        "lastname": "Otto",
+        "name": "Daria Otto",
         "image": "/images/cards/person014.jpg",
         "email": "daria@gmail.com",
         "password": "password",
@@ -180,8 +165,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Elana",
-        "lastname": "Graf",
+        "name": "Elana Graf",
         "image": "/images/cards/person015.jpg",
         "email": "elana@gmail.com",
         "password": "password",
@@ -192,8 +176,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Patricia",
-        "lastname": "Arnold",
+        "name": "Patricia Arnold",
         "image": "/images/cards/person017.jpg",
         "email": "pat@gmail.com",
         "password": "password",
@@ -204,32 +187,29 @@
         "specialized": "Online Marketing"
     },
     {
-        "firstname": "Heba",
-        "lastname": "Otto",
+        "name": "Heba Otto",
         "image": "/images/cards/person020.jpg",
         "email": "heba@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
-        "qualification": "Lead Instructor",
+        "qualification": "Community Team",
         "experience": 8,
-        "specialized": "Online Marketing"
+        "specialized": "Instructor"
     },
     {
-        "firstname": "Luisa",
-        "lastname": "Ernst",
+        "name": "Luisa Ernst",
         "image": "/images/cards/person023.jpg",
         "email": "luisa@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
-        "qualification": "Lead Instructor",
+        "qualification": "Community Team",
         "experience": 8,
-        "specialized": "Online Marketing"
+        "specialized": "Instructor"
     },
     {
-        "firstname": "Sebastian",
-        "lastname": "Richter",
+        "name": "Sebastian Richter",
         "image": "/images/cards/person036.jpg",
         "email": "sr@gmail.com",
         "password": "password",
@@ -237,6 +217,6 @@
         "role": "Instructor",
         "qualification": "Community Team",
         "experience": 1,
-        "specialized": "Communication"
+        "specialized": "Instructor"
     }
 ]
