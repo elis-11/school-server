@@ -55,7 +55,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "name": "Karl Müller",
+        "name": "Karla Müller",
         "image": "/images/cards/person001.jpg",
         "email": "karl@gmail.com",
         "password": "password",
@@ -66,7 +66,7 @@
         "specialized": "Instructor"
     },
     {
-        "name": "Hugo Hoffmann",
+        "name": "Anna Hoffmann",
         "image": "/images/cards/person002.jpg",
         "email": "hugo@gmail.com",
         "password": "password",
@@ -77,7 +77,7 @@
         "specialized": "Instructor"
     },
     {
-        "name": "Heiko Fuchs",
+        "name": "Milena Fuchs",
         "image": "/images/cards/person003.jpg",
         "email": "heiko@gmail.com",
         "password": "password",
@@ -99,7 +99,7 @@
         "specialized": "Web Developer"
     },
     {
-        "name": "Georg Martin",
+        "name": "Linda Martin",
         "image": "/images/cards/person005.jpg",
         "email": "georg@gmail.com",
         "password": "password",
@@ -110,7 +110,7 @@
         "specialized": "Web Developer"
     },
     {
-        "name": "Emil Otto",
+        "name": "Amelia Otto",
         "image": "/images/cards/person007.jpg",
         "email": "emil@gmail.com",
         "password": "password",
@@ -121,7 +121,7 @@
         "specialized": "Web Developer"
     },
     {
-        "name": "Amelia Otto",
+        "name": "Emil Otto",
         "image": "/images/cards/person009.jpg",
         "email": "amelia@gmail.com",
         "password": "password",
@@ -143,7 +143,7 @@
         "specialized": "Web Developer"
     },
     {
-        "name": "Artur Sorge",
+        "name": "Patricia Arnold",
         "image": "/images/cards/person012.jpg",
         "email": "artur@gmail.com",
         "password": "password",
@@ -176,7 +176,7 @@
         "specialized": "Online Marketing"
     },
     {
-        "name": "Patricia Arnold",
+        "name": "",
         "image": "/images/cards/person017.jpg",
         "email": "pat@gmail.com",
         "password": "password",
@@ -198,7 +198,7 @@
         "specialized": "Instructor"
     },
     {
-        "name": "Luisa Ernst",
+        "name": "Sebastian Ernst",
         "image": "/images/cards/person023.jpg",
         "email": "luisa@gmail.com",
         "password": "password",
@@ -209,7 +209,7 @@
         "specialized": "Instructor"
     },
     {
-        "name": "Sebastian Richter",
+        "name": "Luisa Richter",
         "image": "/images/cards/person036.jpg",
         "email": "sr@gmail.com",
         "password": "password",

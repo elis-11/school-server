@@ -1,4 +1,4 @@
-@url = http://localhost:5555
+@url = http://localhost:5000
 
 ### Home
 GET {{url}}/
@@ -8,3 +8,11 @@ GET {{url}}/teachers
 
 ### All Students
 GET {{url}}/students
+
+### all employees
+GET {{url}}/employees
+Content-Type: application/json
+
+### single employee
+GET {{url}}/employees/62b97c5946b7a3ccbfe7d41e
+Content-Type: application/json
