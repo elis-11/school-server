@@ -7,7 +7,7 @@
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 5,
+        "experience": 15,
         "specialized": "Web Developer"
     },
     {
@@ -18,7 +18,7 @@
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 8,
+        "experience": 11,
         "specialized": "Online Marketing"
     },
     {
@@ -40,7 +40,7 @@
         "city": "Hamburg",
         "role": "Instructor",
         "qualification": "Career Support",
-        "experience": 8,
+        "experience": 9,
         "specialized": "Career Support"
     },
     {
@@ -51,40 +51,40 @@
         "city": "Hamburg",
         "role": "Instructor",
         "qualification": "Junior Instructor",
-        "experience": 8,
+        "experience": 1,
         "specialized": "Online Marketing"
     },
     {
         "name": "Karla Müller",
         "image": "/images/cards/person001.jpg",
-        "email": "karl@gmail.com",
+        "email": "karla@gmail.com",
         "password": "password",
         "city": "Hamburg",
         "role": "Instructor",
         "qualification": "Career Support",
-        "experience": 8,
+        "experience": 6,
         "specialized": "Instructor"
     },
     {
         "name": "Anna Hoffmann",
         "image": "/images/cards/person002.jpg",
-        "email": "hugo@gmail.com",
+        "email": "anna@gmail.com",
         "password": "password",
         "city": "Hamburg",
         "role": "Instructor",
         "qualification": "Career Support",
-        "experience": 8,
+        "experience": 9,
         "specialized": "Instructor"
     },
     {
         "name": "Milena Fuchs",
         "image": "/images/cards/person003.jpg",
-        "email": "heiko@gmail.com",
+        "email": "milena@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 8,
+        "experience": 15,
         "specialized": "Online Marketing"
     },
     {
@@ -95,24 +95,24 @@
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Junior Instructor",
-        "experience": 8,
+        "experience": 1,
         "specialized": "Web Developer"
     },
     {
         "name": "Linda Martin",
         "image": "/images/cards/person005.jpg",
-        "email": "georg@gmail.com",
+        "email": "linda@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Junior Instructor",
-        "experience": 8,
+        "experience": 2,
         "specialized": "Web Developer"
     },
     {
         "name": "Amelia Otto",
         "image": "/images/cards/person007.jpg",
-        "email": "emil@gmail.com",
+        "email": "amelia@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
@@ -123,12 +123,12 @@
     {
         "name": "Emil Otto",
         "image": "/images/cards/person009.jpg",
-        "email": "amelia@gmail.com",
+        "email": "emil@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 8,
+        "experience": 7,
         "specialized": "Web Developer"
     },
     {
@@ -139,18 +139,18 @@
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 8,
+        "experience": 5,
         "specialized": "Web Developer"
     },
     {
         "name": "Patricia Arnold",
         "image": "/images/cards/person012.jpg",
-        "email": "artur@gmail.com",
+        "email": "pat@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 8,
+        "experience": 21,
         "specialized": "Online Marketing"
     },
     {
@@ -172,18 +172,18 @@
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 8,
+        "experience": 18,
         "specialized": "Online Marketing"
     },
     {
-        "name": "",
+        "name": "Artur Roy",
         "image": "/images/cards/person017.jpg",
-        "email": "pat@gmail.com",
+        "email": "artur@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Lead Instructor",
-        "experience": 8,
+        "experience": 12,
         "specialized": "Online Marketing"
     },
     {
@@ -200,18 +200,18 @@
     {
         "name": "Sebastian Ernst",
         "image": "/images/cards/person023.jpg",
-        "email": "luisa@gmail.com",
+        "email": "sr@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",
         "qualification": "Community Team",
-        "experience": 8,
+        "experience": 4,
         "specialized": "Instructor"
     },
     {
         "name": "Luisa Richter",
         "image": "/images/cards/person036.jpg",
-        "email": "sr@gmail.com",
+        "email": "luisa@gmail.com",
         "password": "password",
         "city": "Berlin",
         "role": "Instructor",

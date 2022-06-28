@@ -1,0 +1,142 @@
+[
+    {
+        "title": "Orientation Course",
+        "location": "Berlin",
+        "duration": "4 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "Orientation Course",
+        "location": "Berlin",
+        "duration": "4 Weeks",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "Web Development",
+        "location": "Berlin",
+        "duration": "14 Month",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "Web Development",
+        "location": "Berlin",
+        "duration": "14 Month",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "Online Marketing",
+        "location": "Berlin",
+        "duration": "14 Month",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "Online Marketing",
+        "location": "Berlin",
+        "duration": "14 Month",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "HR Consultant",
+        "location": "Berlin",
+        "duration": "16 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "HR Consultant",
+        "location": "Berlin",
+        "duration": "16 Weeks",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "AWS Cloud Computing",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "AWS Cloud Computing",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "Python Backend",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "Python Backend",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "Java Backend",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "Java Backend",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "JavaScript",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "JavaScript",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "C++",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "C++",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "German"
+    },
+    {
+        "title": "React",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "English"
+    },
+    {
+        "title": "React",
+        "location": "Berlin",
+        "duration": "12 Weeks",
+        "education": "Online",
+        "language": "German"
+    }
+]

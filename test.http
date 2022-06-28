@@ -16,3 +16,11 @@ Content-Type: application/json
 ### single employee
 GET {{url}}/employees/62b97c5946b7a3ccbfe7d41e
 Content-Type: application/json
+
+### all courses
+GET {{url}}/courses
+Content-Type: application/json
+
+### single course
+GET {{url}}/courses/62bb409c765e540ad597b1b6
+Content-Type: application/json
