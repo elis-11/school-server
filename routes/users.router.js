@@ -3,12 +3,6 @@ import { User } from "../models/User.js";
 
 export const usersRouter = express.Router();
 
-// Get all users
-usersRouter.get("/", async (req, res) => {
-  const usersAll = await User.find();
-  res.json(usersAll);
-});
-
 // Get / users / me
 usersRouter.get("/me", (req, res) => {
   if (!req.session.user) {
@@ -19,11 +13,17 @@ usersRouter.get("/me", (req, res) => {
   res.json(req.session.user);
 });
 
-// Get single user
-usersRouter.get("/:id", async (req, res) => {
-  const user = await User.findById(req.params.id);
-  res.json(user);
+// Get all users
+usersRouter.get("/", async (req, res) => {
+  const usersAll = await User.find();
+  res.json(usersAll);
 });
+
+// Get single user
+// usersRouter.get("/:id", async (req, res) => {
+//   const user = await User.findById(req.params.id);
+//   res.json(user);
+// });
 
 // Post users / create / signup
 usersRouter.post("/", async (req, res, next) => {

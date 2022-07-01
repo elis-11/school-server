@@ -2,16 +2,21 @@
     {
         "name": "Gael Cords",
         "email": "gael@gmail.com",
-        "password": "gael1"
+        "password": "gael"
     },
     {
         "name": "Elisa Cords",
         "email": "elisa@gmail.com",
-        "password": "elisa1"
+        "password": "elisa"
     },
     {
         "name": "Robert Cords",
         "email": "robert@gmail.com",
-        "password": "robert1"
+        "password": "robert"
+    },
+    {
+        "name": "admin",
+        "email": "admin@gmail.com",
+        "password": "admin"
     }
 ]
