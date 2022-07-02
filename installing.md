@@ -1,4 +1,5 @@
-nvm    -important comand
+```
+nvm    //!-important comand
 nvm list
 
 whereis node
@@ -12,3 +13,19 @@ npm i -g nodemon
 
 vercel
 npm i -g vercel
+
+heroku
+npm i -g heroku
+
+```
+```
+&:after {
+  content: "";
+  display: block;
+  width: 60px;
+  color: #fcfcfc;
+  height: 3px;
+  margin: 30px auto;
+  background-color: thistle;
+}
+```

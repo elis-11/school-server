@@ -1,5 +1,122 @@
 [
-    {"firstname": "Robert", "lastname": "Neumann", "email": "rob@gmail.com", "password": "password", "city": "Berlin", "title": "Coach","experience": 5, "specialized": "Web Developer"},
-    {"firstname": "Julian", "lastname": "Pahl", "email": "julian@gmail.com", "password": "password", "city": "Berlin", "title": "Trainer","experience": 8, "specialized": "Online Marketing"},
-    {"firstname": "Sebastian", "lastname": "Richter", "email": "sr@gmail.com", "password": "password", "city": "Berlin", "title": "Trainer","experience": 1, "specialized": "Web Developer"}
+    {
+        "name": "Robert Neumann",
+        "image": "/images/teachers/tt119.jpg",
+        "email": "rob@gmail.com",
+        "password": "rob",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 5,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Julian Pahl",
+        "image": "/images/teachers/tt111.jpg",
+        "email": "julian@gmail.com",
+        "password": "julian",
+        "city": "Berlin",
+        "title": "Trainer",
+        "experience": 8,
+        "specialized": "Online Marketing"
+    },
+    {
+        "name": "Sebastian Richter",
+        "image": "/images/teachers/tt114.jpg",
+        "email": "sr@gmail.com",
+        "password": "sr",
+        "city": "Berlin",
+        "title": "Trainer",
+        "experience": 1,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Gerda Heller",
+        "image": "/images/teachers/tt112.jpg",
+        "email": "gerda@gmail.com",
+        "password": "gerda",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 7,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Alexa Wolf",
+        "image": "/images/teachers/tt116.jpg",
+        "email": "alexa@gmail.com",
+        "password": "alexa",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 2,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Luisa Pahl",
+        "image": "/images/teachers/tt121.jpg",
+        "email": "luisa@gmail.com",
+        "password": "luisa",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 12,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Jennyfer Hartman",
+        "image": "/images/teachers/tt122.jpg",
+        "email": "jenny@gmail.com",
+        "password": "jenny",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 5,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Conny Neumann",
+        "image": "/images/teachers/tt118.jpg",
+        "email": "conny@gmail.com",
+        "password": "conny",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 5,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Silke Neumann",
+        "image": "/images/teachers/tt115.jpg",
+        "email": "silke@gmail.com",
+        "password": "silke",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 15,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Ricci Fischer",
+        "image": "/images/teachers/tt110.jpg",
+        "email": "ricci@gmail.com",
+        "password": "ricci",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 4,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Ida Busse",
+        "image": "/images/teachers/tt113.jpg",
+        "email": "ida@gmail.com",
+        "password": "ida",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 6,
+        "specialized": "Web Developer"
+    },
+    {
+        "name": "Milena Schulz",
+        "image": "/images/teachers/tt117.jpg",
+        "email": "milena@gmail.com",
+        "password": "milena",
+        "city": "Berlin",
+        "title": "Coach",
+        "experience": 3,
+        "specialized": "Web Developer"
+    }
 ]

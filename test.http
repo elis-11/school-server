@@ -37,10 +37,10 @@ GET {{url}}/users/me
 
 
 ### single user
-GET {{url}}/users/62bf0cccb97797a0e0a2632a
+GET {{url}}/users/62bebf62231486c1467a8b05
 Content-Type: application/json
 
-### create user
+### create user / signup
 POST {{url}}/users
 Content-Type: application/json
 
