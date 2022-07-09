@@ -27,7 +27,7 @@
         "city": "Berlin",
         "title": "Trainer",
         "experience": 1,
-        "specialized": "Web Developer"
+        "specialized": "Online Marketing"
     },
     {
         "name": "Gerda Heller",
@@ -47,7 +47,7 @@
         "city": "Berlin",
         "title": "Coach",
         "experience": 2,
-        "specialized": "Web Developer"
+        "specialized": "Online Marketing"
     },
     {
         "name": "Luisa Pahl",
@@ -55,7 +55,7 @@
         "email": "luisa@gmail.com",
         "password": "luisa",
         "city": "Berlin",
-        "title": "Coach",
+        "title": "Trainer",
         "experience": 12,
         "specialized": "Web Developer"
     },
@@ -75,9 +75,9 @@
         "email": "conny@gmail.com",
         "password": "conny",
         "city": "Berlin",
-        "title": "Coach",
+        "title": "Trainer",
         "experience": 5,
-        "specialized": "Web Developer"
+        "specialized": "Online Marketing"
     },
     {
         "name": "Silke Neumann",
@@ -105,9 +105,9 @@
         "email": "ida@gmail.com",
         "password": "ida",
         "city": "Berlin",
-        "title": "Coach",
+        "title": "Trainer",
         "experience": 6,
-        "specialized": "Web Developer"
+        "specialized": "Online Marketing"
     },
     {
         "name": "Milena Schulz",

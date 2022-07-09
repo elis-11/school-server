@@ -45,6 +45,8 @@ usersRouter.post("/", async (req, res, next) => {
     // res.status(400).json({ error: err.message });
     next(err);
   }
+    // const userNew = await User.create(req.body);
+    // res.json(userNew);
 });
 
 usersRouter.post("/login", async (req, res) => {
@@ -56,14 +58,14 @@ usersRouter.post("/login", async (req, res) => {
   if (!userFound)
     return res
       .status(400)
-      .json({ error: "User does not exist! Try with other email / password" });
+      .json({ error: "User does not exist! Try with other email / password", });
   req.session.user = userFound;
   res.json(userFound);
 });
 
 usersRouter.get("/logout", (req, res) => {
   req.session.destroy((err) => {
-    res.clearCookie("connect.sit");
+    res.clearCookie("connect.sid");
     res.json({ message: "Logged you out successfully!" });
   });
 });
