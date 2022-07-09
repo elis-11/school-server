@@ -1,22 +1,169 @@
-[
-    {
-        "name": "Gael Cords",
-        "email": "gael@gmail.com",
-        "password": "gael"
-    },
-    {
-        "name": "Elisa Cords",
-        "email": "elisa@gmail.com",
-        "password": "elisa"
-    },
-    {
-        "name": "Robert Cords",
-        "email": "robert@gmail.com",
-        "password": "robert"
-    },
-    {
-        "name": "admin",
-        "email": "admin@gmail.com",
-        "password": "admin"
+[{
+  "_id": {
+    "$oid": "62c8175238a6ac13a8d5e834"
+  },
+  "name": "Anita",
+  "image": "/images/users/person046.jpg",
+  "email": "anita@gmail.com",
+  "password": "anita",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657280338678"
     }
-]
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657280338678"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62bf30e8fd8e8b928ec2b5b1"
+  },
+  "name": "Tiana",
+  "image": "/images/users/person028.jpg",
+  "email": "tiana@gmail.com",
+  "password": "tiana",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656697064599"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1656697064599"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62bebf62231486c1467a8b04"
+  },
+  "name": "Elisa",
+  "image": "/images/users/person001.jpg",
+  "email": "elisa@gmail.com",
+  "password": "elisa"
+},{
+  "_id": {
+    "$oid": "62bebf62231486c1467a8b03"
+  },
+  "name": "Gael",
+  "image": "/images/users/person029.jpg",
+  "email": "gael@gmail.com",
+  "password": "gael"
+},{
+  "_id": {
+    "$oid": "62bebf62231486c1467a8b05"
+  },
+  "name": "Robert",
+  "image": "/images/users/person008.jpg",
+  "email": "robert@gmail.com",
+  "password": "robert"
+},{
+  "_id": {
+    "$oid": "62c060046db305ddac2d4215"
+  },
+  "name": "Albert",
+  "image": "/images/users/person023.jpg",
+  "email": "albert@gmail.com",
+  "password": "albert",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656774660610"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1656774660610"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62c8421f9f09846d629977b6"
+  },
+  "name": "Maxima",
+  "image": "/images/users/person017.jpg",
+  "email": "maxima@gmail.com",
+  "password": "maxima",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657291295158"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657291295158"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62bf2b9ffe00ab09f0870925"
+  },
+  "name": "Ralf",
+  "image": "/images/users/person036.jpg",
+  "email": "ralf@gmail.com",
+  "password": "ralf",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656695711730"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1656695711730"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62bf0cccb97797a0e0a2632a"
+  },
+  "name": "admin",
+  "image": "/images/users/person006.jpg",
+  "email": "admin@gmail.com",
+  "password": "admin",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656687820253"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1656687820253"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62c72047a287a451ed6d00b5"
+  },
+  "name": "Leon",
+  "image": "/images/users/person034.jpg",
+  "email": "leon@gmail.com",
+  "password": "leon",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657217095728"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657217095728"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62c72eaa0531fd3a208aba6d"
+  },
+  "name": "losrobbos",
+  "image": "/images/users/person032.jpg",
+  "email": "losrobbos@web.de",
+  "password": "rob123",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1657220778873"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657220778873"
+    }
+  }
+}]
