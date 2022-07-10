@@ -14,16 +14,8 @@ mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
 
-// app.use(cors({ origin: process.env.ORIGIN_URL, credentials: true }));
-app.use(
-  cors({
-    origin:
-      process.env.NODE_ENV !== "production"
-        ? process.env.ORIGIN_URL
-        : process.env.ORIGIN_URL_HTTPS,
-    credentials: true,
-  })
-);
+app.use(cors({ origin: process.env.ORIGIN_URL, credentials: true }));
+
 app.use(express.json());
 app.use(
   session({
