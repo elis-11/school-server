@@ -1,3 +1,8 @@
 node_modules
 .env
 .vercel
+courses.json
+employees.json
+student.json
+teacher.json
+dev
