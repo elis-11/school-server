@@ -1,5 +1,0 @@
-[
-    {"firstname": "Heba", "lastname": "Hartmann", "email": "heba@gmail.com",  "password": "password", "city": "Berlin", "level": "Advanced", "specialized": "Web Developer"},
-    {"firstname": "Eliza", "lastname": "Cords", "email": "eliza@gmail.com",  "password": "password", "city": "Hamburg", "level": "Beginner", "specialized": "Web Developer"},
-    {"firstname": "Osama", "lastname": "Pahl", "email": "osama@gmail.com",  "password": "password", "city": "Berlin", "level": "Beginner", "specialized": "Web Developer"}
-]
