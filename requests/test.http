@@ -1,0 +1,30 @@
+@url = http://localhost:5000
+
+### Home
+GET {{url}}/
+
+### All Teachers
+GET {{url}}/teachers
+
+### All Students
+GET {{url}}/students
+
+
+### all employees
+GET {{url}}/employees
+Content-Type: application/json
+
+### single employee
+GET {{url}}/employees/62ba2f29048602418b346594
+Content-Type: application/json
+
+
+### all courses
+GET {{url}}/courses
+Content-Type: application/json
+
+### single course
+GET {{url}}/courses/62bb5bc0765e540ad597b1ec
+Content-Type: application/json
+
+

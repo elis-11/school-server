@@ -1,0 +1,45 @@
+@url = http://localhost:5000
+
+### all users
+GET {{ url }}/users
+Content-Type: "application/json"
+
+### create user / signup
+POST {{url}}/users
+Content-Type: application/json
+
+{
+    "name": "ooo",
+    "email": "ooo@gmail.com",
+    "password": "ooo"
+}
+
+### login user
+POST {{url}}/users/login
+Content-Type: application/json
+
+{
+    "email": "malf@gmail.com",
+    "password": "ralf"
+}
+
+### single user
+GET {{ url }}/users/me
+Content-Type: "application/json"
+
+### logout user
+GET {{url}}/users/logout
+
+### update user
+PATCH {{url}}/users/62cad36aecbfbc0b94ec00b6
+Content-Type: application/json
+
+{
+    "name": "Tonny",
+    "email": "tonny@gmail.com",
+    "password": "tonny"
+}
+
+### delete user
+DELETE {{url}}/users/62cad351ecbfbc0b94ebfe13
+Content-Type: "application/json"
