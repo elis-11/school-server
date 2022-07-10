@@ -14,7 +14,16 @@ mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
 
-app.use(cors({ origin: process.env.ORIGIN_URL, credentials: true }));
+// app.use(cors({ origin: process.env.ORIGIN_URL, credentials: true }));
+app.use(
+  cors({
+    origin:
+      process.env.NODE_ENV !== "production"
+        ? process.env.ORIGIN_URL
+        : process.env.ORIGIN_URL_HTTPS,
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(
   session({
@@ -47,20 +56,20 @@ app.get("/", (req, res) => {
 app.use("/teachers", teachersRouter);
 app.use("/students", studentsRouter);
 app.use("/employees", employeesRouter);
-app.use("/courses", coursesRouter)
+app.use("/courses", coursesRouter);
 app.use("/users", usersRouter);
 
 app.use((req, res, next) => {
   res.status(404).json({ error: `This route does not exist` });
 });
 
-app.use( (err, req, res, next) => {
-  console.log(err) // this is for us internally => to get line where error happend
+app.use((err, req, res, next) => {
+  console.log(err); // this is for us internally => to get line where error happend
   // send error with just message to frontend
   res.status(400).json({
-    error: err.message
-  })
-}) 
+    error: err.message,
+  });
+});
 
 const PORT = 5000 || process.env.PORT;
 app.listen(PORT, () => {
