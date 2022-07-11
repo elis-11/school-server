@@ -4,14 +4,18 @@
 GET {{ url }}/users
 Content-Type: application/json
 
+### delete user
+DELETE {{url}}/users/62cb0550f054199ee3719ae5
+Content-Type: application/json
+
 ### create user / signup
 POST {{url}}/users
 Content-Type: application/json
 
 {
-    "name": "ooo",
-    "email": "ooo@gmail.com",
-    "password": "ooo"
+    "name": "Emili",
+    "email": "emili@gmail.com",
+    "password": "emili"
 }
 
 ### login user
@@ -31,15 +35,11 @@ Content-Type: application/json
 GET {{url}}/users/logout
 
 ### update user
-PATCH {{url}}/users/62caea6d33c4ce2e51962511
+PATCH {{url}}/users/62cc2b03a7ec45fc179ed1e5
 Content-Type: application/json
 
 {
-    "name": "Rob",
-    "email": "rob@gmail.com",
-    "password": "rob"
+    "name": "Jannat",
+    "email": "jannat@gmail.com",
+    "password": "jannat"
 }
-
-### delete user
-DELETE {{url}}/users/62cad351ecbfbc0b94ebfe13
-Content-Type: application/json

@@ -42,6 +42,7 @@ app.get("/", (req, res) => {
 <div>Users: <a href="/users">/users</a></div>
 <div>Teachers: <a href="/teachers">/teachers</a></div>
 <div>Students: <a href="/students">/students</a></div>
+<div> Frontend URL: <a href="${process.env.ORIGIN_URL}"> ${process.env.ORIGIN_URL}</a></div>
     `);
 });
 

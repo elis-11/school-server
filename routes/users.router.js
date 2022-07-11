@@ -19,11 +19,6 @@ usersRouter.get("/", async (req, res) => {
   res.json(usersAll);
 });
 
-// Get single user
-// usersRouter.get("/:id", async (req, res) => {
-//   const user = await User.findById(req.params.id);
-//   res.json(user);
-// });
 
 // Post users / create / signup
 usersRouter.post("/", async (req, res, next) => {
@@ -80,4 +75,10 @@ usersRouter.patch("/:id", async (req, res) => {
     new: true,
   });
   res.json(userUpdated);
+});
+
+// Get single user
+usersRouter.get("/:id", async (req, res) => {
+  const user = await User.findById(req.params.id);
+  res.json(user);
 });
