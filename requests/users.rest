@@ -5,7 +5,7 @@ GET {{ url }}/users
 Content-Type: application/json
 
 ### delete user
-DELETE {{url}}/users/62cb0550f054199ee3719ae5
+DELETE {{url}}/users/62cc72d15781638449d5e65e
 Content-Type: application/json
 
 ### create user / signup
