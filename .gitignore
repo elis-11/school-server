@@ -3,7 +3,7 @@ node_modules
 .vercel
 courses.json
 employees.json
-student.json
-teacher.json
+students.json
+teachers.json
 users.json
-dev
+projects.json

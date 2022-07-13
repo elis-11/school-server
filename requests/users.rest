@@ -13,9 +13,9 @@ POST {{url}}/users
 Content-Type: application/json
 
 {
-    "name": "Emili",
-    "email": "emili@gmail.com",
-    "password": "emili"
+    "name": "Leonid",
+    "email": "leonid@gmail.com",
+    "password": "leonid"
 }
 
 ### login user
@@ -23,13 +23,9 @@ POST {{url}}/users/login
 Content-Type: application/json
 
 {
-    "email": "malf@gmail.com",
-    "password": "ralf"
+    "email": "leonid@gmail.com",
+    "password": "leonid"
 }
-
-### single user
-GET {{ url }}/users/me
-Content-Type: application/json
 
 ### logout user
 GET {{url}}/users/logout
@@ -43,3 +39,7 @@ Content-Type: application/json
     "email": "jannat@gmail.com",
     "password": "jannat"
 }
+
+### single user
+GET {{ url }}/users/me
+Content-Type: application/json
