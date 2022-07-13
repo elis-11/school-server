@@ -1,0 +1,9 @@
+@url= http://localhost:5000
+
+### all projects
+GET {{ url }}/projects
+Content-Type: application/json
+
+### single project
+GET {{ url }}/projects/62cea1e23c0ff3544e30c5e5
+Content-Type: application/json
