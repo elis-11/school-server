@@ -2,7 +2,6 @@
 
 ### all users
 GET {{ url }}/users
-Content-Type: application/json
 
 ### delete user
 DELETE {{url}}/users/62cc72d15781638449d5e65e
