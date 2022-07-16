@@ -1,6 +1,5 @@
 node_modules
 .env
-.vercel
 courses.json
 employees.json
 students.json
