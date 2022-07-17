@@ -1,11 +1,13 @@
 import dotenv from "dotenv";
 import express from "express";
+import session from "express-session";
+import cookieParser from "cookie-parser";
 import cors from "cors";
 import mongoose from "mongoose";
+// import bcrypt from "bcrypt";
 import { studentsRouter } from "./routes/students.router.js";
 import { teachersRouter } from "./routes/teachers.router.js";
 import { employeesRouter } from "./routes/employees.router.js";
-import session from "express-session";
 import { coursesRouter } from "./routes/courses.router.js";
 import { usersRouter } from "./routes/users.router.js";
 import { projectsRouter } from "./routes/projects.router.js";
@@ -14,6 +16,19 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
+
+// const saltRounds = Number(process.env.SALT_ROUNDS);
+
+const mongoConnectString = process.env.MONGO_URI;
+mongoose
+  .connect(mongoConnectString, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log(`MongoDB Connected!!!`))
+  .catch((err) => console.log(`Error: ${err.message}`));
+
+app.set("trust proxy", 1);
 
 // app.use(cors({ origin: process.env.ORIGIN_URL, credentials: true }));
 app.use(
@@ -26,6 +41,7 @@ app.use(
   })
 );
 
+app.use(cookieParser());
 
 app.use(express.json());
 app.use(
@@ -37,8 +53,8 @@ app.use(
     cookie: {
       httpOnly: true,
       maxAge: 1000 * 60 * 60 * 10,
-      secure: process.env.NODE_ENV === "production",
       sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      secure: process.env.NODE_ENV === "production",
     },
   })
 );
