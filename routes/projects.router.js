@@ -28,8 +28,8 @@ projectsRouter.post("/", async (req, res, next) => {
       .json({ error: `Project with name ${name} already exists!` });
   }
   try {
-    const projectNew = await Project.create(req.body);
-    res.json(projectNew);
+    const newProject = await Project.create(req.body);
+    res.json(newProject);
   } catch (err) {
     next(err);
   }

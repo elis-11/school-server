@@ -6,10 +6,10 @@ Content-Type: application/json
 
 ### create
 POST {{url}}/projects
-content-type: application/json
+Content-Type: application/json
 
 {
-    "name": "New-Cloud-Disk",
+    "name": "NewCloud",
     "image": "cloud.png",
     "secondImage": "cloud2.png",
     "description": "Fullstack Project",
@@ -32,7 +32,7 @@ content-type: application/json
 }
 
 ### delete
-DELETE {{url}}/projects/62d52e29c392c39fcb537e26
+DELETE {{url}}/projects/62d52e9fc392c39fcb537e2a
 
 ### single project
 GET {{ url }}/projects/62d4749a42ebdbfb58561489
