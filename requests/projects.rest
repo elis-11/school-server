@@ -9,7 +9,7 @@ POST {{url}}/projects
 Content-Type: application/json
 
 {
-    "name": "NewCloud",
+    "name": "New Cloud",
     "image": "cloud.png",
     "secondImage": "cloud2.png",
     "description": "Fullstack Project",
