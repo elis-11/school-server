@@ -9,14 +9,15 @@ POST {{url}}/projects
 Content-Type: application/json
 
 {
-    "name": "New Cloud",
-    "image": "cloud.png",
-    "secondImage": "cloud2.png",
-    "description": "Fullstack Project",
-    "tools": "React, JavaScript, NodeJS, MongoDB",
-    "link": "https://cloud-disk-five.vercel.app/login",
-    "github": "https://github.com/elis-11/cloud-disk-server"
+    "name": "Note",
+    "image": "note.png",
+    "secondImage": "note2.png",
+    "description": "Backend Project",
+    "tools": "HTML, SCSS, JavaScript, NodeJS, MongoDB",
+    "link": "https://note-app-rust.vercel.app",
+    "github": "https://github.com/elis-11/note-app"
 }
+
 ### update
 PATCH {{url}}/projects/62d52c99c392c39fcb537e0a
 content-type: application/json

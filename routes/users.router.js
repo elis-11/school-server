@@ -13,11 +13,37 @@ usersRouter.get("/me", (req, res) => {
   res.json(req.session.user);
 });
 
-// Get all users
 usersRouter.get("/", async (req, res) => {
   const usersAll = await User.find();
   res.json(usersAll);
 });
+
+const userInGroup=(user, group) => {
+  const accessGroup=user.group.split(",".map(u=>u.trim()))
+  return accessGroup.includes(group)
+}
+
+// approveuser
+// usersRouter.post("/approveuser", async (req, res) => {
+//   console.log(req.body);
+//   const id=req.body.id
+//   let user=req.session.user
+//   console.log(user);
+//   if(!user){
+//     res.sendStatus(403)
+//   } else {
+//     if (!userInGroup(user, "admin")) {
+//       res.sendStatus(403)
+//     } else {
+//       const updateResult= await User.findByIdAndUpdate(
+//         {_id: new mongoose.Types.ObjectId(id)},
+//         {$set: {group: "user. member"}},
+//         {new: true}
+//       )
+//       res.json({result: updateResult})
+//     }
+//   }
+// })
 
 
 // Post users / create / signup

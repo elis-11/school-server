@@ -39,6 +39,9 @@ Content-Type: application/json
     "password": "jannat"
 }
 
-### single user
-GET {{ url }}/users/me
+### me user
+GET {{ url }}/users/currentuser
 Content-Type: application/json
+
+### single user
+GET {{ url }}/users/62bf30e8fd8e8b928ec2b5b1

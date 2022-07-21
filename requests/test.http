@@ -26,10 +26,3 @@ Content-Type: application/json
 ### single course
 GET {{url}}/courses/62bb5bc0765e540ad597b1ec
 Content-Type: application/json
-
-
-#REACT_APP_API_URL=http://localhost:5000
-REACT_APP_API_URL=https://school-server-henna.vercel.app
-#vercel login
-#vercel
-#vercel --prod
