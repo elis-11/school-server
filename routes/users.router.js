@@ -13,6 +13,7 @@ usersRouter.get("/me", (req, res) => {
   res.json(req.session.user);
 });
 
+// all users
 usersRouter.get("/", async (req, res) => {
   const usersAll = await User.find();
   res.json(usersAll);

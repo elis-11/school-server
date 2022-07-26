@@ -9,13 +9,13 @@ POST {{url}}/projects
 Content-Type: application/json
 
 {
-    "name": "Note",
-    "image": "note.png",
-    "secondImage": "note2.png",
-    "description": "Backend Project",
-    "tools": "HTML, SCSS, JavaScript, NodeJS, MongoDB",
-    "link": "https://note-app-rust.vercel.app",
-    "github": "https://github.com/elis-11/note-app"
+    "name": "Posts",
+    "image": "posts.png",
+    "secondImage": "posts2.png",
+    "description": "Fullstack Project",
+    "tools": "HTML, SCSS, JavaScript, NodeJS, MongoDB, JWT, Bcrypt,",
+    "link": "https://posts-lemon.vercel.app",
+    "github": "https://github.com/elis-11/posts"
 }
 
 ### update
