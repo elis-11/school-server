@@ -13,7 +13,7 @@ import { usersRouter } from "./routes/users.router.js";
 import { projectsRouter } from "./routes/projects.router.js";
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URI);
+// mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
 
@@ -93,7 +93,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5555;
 app.listen(PORT, () => {
   console.log(`App listenin at http://localhost:` + PORT);
 });
