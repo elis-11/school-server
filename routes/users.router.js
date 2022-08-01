@@ -24,29 +24,6 @@ const userInGroup=(user, group) => {
   return accessGroup.includes(group)
 }
 
-// approveuser
-// usersRouter.post("/approveuser", async (req, res) => {
-//   console.log(req.body);
-//   const id=req.body.id
-//   let user=req.session.user
-//   console.log(user);
-//   if(!user){
-//     res.sendStatus(403)
-//   } else {
-//     if (!userInGroup(user, "admin")) {
-//       res.sendStatus(403)
-//     } else {
-//       const updateResult= await User.findByIdAndUpdate(
-//         {_id: new mongoose.Types.ObjectId(id)},
-//         {$set: {group: "user. member"}},
-//         {new: true}
-//       )
-//       res.json({result: updateResult})
-//     }
-//   }
-// })
-
-
 // Post users / create / signup
 usersRouter.post("/", async (req, res, next) => {
   const { email } = req.body;
@@ -109,3 +86,25 @@ usersRouter.get("/:id", async (req, res) => {
   const user = await User.findById(req.params.id);
   res.json(user);
 });
+
+// approveuser
+// usersRouter.post("/approveuser", async (req, res) => {
+//   console.log(req.body);
+//   const id=req.body.id
+//   let user=req.session.user
+//   console.log(user);
+//   if(!user){
+//     res.sendStatus(403)
+//   } else {
+//     if (!userInGroup(user, "admin")) {
+//       res.sendStatus(403)
+//     } else {
+//       const updateResult= await User.findByIdAndUpdate(
+//         {_id: new mongoose.Types.ObjectId(id)},
+//         {$set: {group: "user. member"}},
+//         {new: true}
+//       )
+//       res.json({result: updateResult})
+//     }
+//   }
+// })
