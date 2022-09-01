@@ -4,17 +4,16 @@
 GET {{ url }}/users
 
 ### delete user
-DELETE {{url}}/users/62cc72d15781638449d5e65e
-Content-Type: application/json
+DELETE {{url}}/users/62fc8e2b09f5b4232df80c6e
 
 ### create user / signup
 POST {{url}}/users
 Content-Type: application/json
 
 {
-    "name": "Leonid",
-    "email": "leonid@gmail.com",
-    "password": "leonid"
+    "name": "Ralf",
+    "email": "ralf@gmail.com",
+    "password": "ralf"
 }
 
 ### login user
