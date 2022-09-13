@@ -5,7 +5,7 @@ const UserSchema = new mongoose.Schema(
     name: { type: String, required: true },
     image: { type: String, default: "default.png" },
     email: { type: String, required: true },
-    group: { type: String, default: "user, member"},
+    role: { type: String, default: "user"},
     password: { type: String, required: true },
   },
   {

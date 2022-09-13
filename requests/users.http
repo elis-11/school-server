@@ -4,7 +4,7 @@
 GET {{ url }}/users
 
 ### delete user
-DELETE {{url}}/users/62fc8e2b09f5b4232df80c6e
+DELETE {{url}}/users/6320b7b2aa396f815b39d553
 
 ### create user / signup
 POST {{url}}/users
