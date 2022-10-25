@@ -7,6 +7,7 @@ node -v
 nvm i 16
 nvm i 14
 nvm use 16
+nvm alias default 16.....
 
 nodemon
 npm i -g nodemon
