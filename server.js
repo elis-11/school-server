@@ -93,7 +93,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 5555;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`App listenin at http://localhost:` + PORT);
 });
