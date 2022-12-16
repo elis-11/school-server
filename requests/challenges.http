@@ -1,0 +1,40 @@
+@url= http://localhost:5000
+
+### all challenges
+GET {{ url }}/challenges
+Content-Type: application/json
+
+### create
+POST {{url}}/challenges
+Content-Type: application/json
+
+{
+    "name": "filter-checkbox-one",
+    "image": "filter-one.png",
+    "secondImage": "filter-one.png",
+    "description": "Frontens Project",
+    "tools": "HTML, SCSS, JavaScript",
+    "link": "https://filter-checkbox-one.netlify.app",
+    "github": "https://github.com/elis-11/filter-checkbox-one"
+}
+
+### update
+PATCH {{url}}/challenges/62d52c99c392c39fcb537e0a
+content-type: application/json
+
+{
+    "name": "New Tralala",
+    "image": "cloud.png",
+    "secondImage": "cloud2.png",
+    "description": "Tralala",
+    "tools": "cloud.png",
+    "link": "cloud.png",
+    "github": "cloud.png"
+}
+
+### delete
+DELETE {{url}}/challenges/62d52e9fc392c39fcb537e2a
+
+### single project
+GET {{ url }}/challenges/62d4749a42ebdbfb58561489
+Content-Type: application/json
